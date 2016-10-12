@@ -1,0 +1,1 @@
+export const Config = require('./env.json')[process.env.NODE_ENV || 'development']

@@ -1,0 +1,7 @@
+data
+dist
+node_modules
+client/typings
+server/typings
+npm-debug.log
+.DS_Store
