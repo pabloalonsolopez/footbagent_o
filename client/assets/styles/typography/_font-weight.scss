@@ -1,0 +1,15 @@
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+    .normal#{breakpoint-name($breakpoint-name)} { font-weight: normal; }
+    .b#{breakpoint-name($breakpoint-name)}      { font-weight: bold; }
+    .fw1#{breakpoint-name($breakpoint-name)}    { font-weight: 100; }
+    .fw2#{breakpoint-name($breakpoint-name)}    { font-weight: 200; }
+    .fw3#{breakpoint-name($breakpoint-name)}    { font-weight: 300; }
+    .fw4#{breakpoint-name($breakpoint-name)}    { font-weight: 400; }
+    .fw5#{breakpoint-name($breakpoint-name)}    { font-weight: 500; }
+    .fw6#{breakpoint-name($breakpoint-name)}    { font-weight: 600; }
+    .fw7#{breakpoint-name($breakpoint-name)}    { font-weight: 700; }
+    .fw8#{breakpoint-name($breakpoint-name)}    { font-weight: 800; }
+    .fw9#{breakpoint-name($breakpoint-name)}    { font-weight: 900; }
+  }
+}

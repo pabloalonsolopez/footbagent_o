@@ -1,0 +1,17 @@
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+    .dn#{breakpoint-name($breakpoint-name)}              { display: none; }
+    .di#{breakpoint-name($breakpoint-name)}              { display: inline; }
+    .db#{breakpoint-name($breakpoint-name)}              { display: block; }
+    .dib#{breakpoint-name($breakpoint-name)}             { display: inline-block; }
+    .dit#{breakpoint-name($breakpoint-name)}             { display: inline-table; }
+    .dt#{breakpoint-name($breakpoint-name)}              { display: table; }
+    .dtc#{breakpoint-name($breakpoint-name)}             { display: table-cell; }
+    .dt-row#{breakpoint-name($breakpoint-name)}          { display: table-row; }
+    .dt-row-group#{breakpoint-name($breakpoint-name)}    { display: table-row-group; }
+    .dt-column#{breakpoint-name($breakpoint-name)}       { display: table-column; }
+    .dt-column-group#{breakpoint-name($breakpoint-name)} { display: table-column-group; }
+
+    .dt--fixed#{breakpoint-name($breakpoint-name)}       { table-layout: fixed; width: 100%; }
+  }
+}

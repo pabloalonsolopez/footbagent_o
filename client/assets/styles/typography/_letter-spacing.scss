@@ -1,0 +1,7 @@
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+    .tracked#{breakpoint-name($breakpoint-name)}       { letter-spacing: .1em; }
+    .tracked-tight#{breakpoint-name($breakpoint-name)} { letter-spacing: -.05em; }
+    .tracked-mega#{breakpoint-name($breakpoint-name)}  { letter-spacing: .25em; }
+  }
+}

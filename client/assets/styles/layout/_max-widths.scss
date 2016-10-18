@@ -1,0 +1,17 @@
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+    .mw-100#{breakpoint-name($breakpoint-name)}  { max-width: 100%; }
+
+    .mw1#{breakpoint-name($breakpoint-name)}     { max-width: 1rem; }
+    .mw2#{breakpoint-name($breakpoint-name)}     { max-width: 2rem; }
+    .mw3#{breakpoint-name($breakpoint-name)}     { max-width: 4rem; }
+    .mw4#{breakpoint-name($breakpoint-name)}     { max-width: 8rem; }
+    .mw5#{breakpoint-name($breakpoint-name)}     { max-width: 16rem; }
+    .mw6#{breakpoint-name($breakpoint-name)}     { max-width: 32rem; }
+    .mw7#{breakpoint-name($breakpoint-name)}     { max-width: 48rem; }
+    .mw8#{breakpoint-name($breakpoint-name)}     { max-width: 64rem; }
+    .mw9#{breakpoint-name($breakpoint-name)}     { max-width: 96rem; }
+
+    .mw-none#{breakpoint-name($breakpoint-name)} { max-width: none; }
+  }
+}

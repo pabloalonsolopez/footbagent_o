@@ -1,0 +1,8 @@
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+    .static#{breakpoint-name($breakpoint-name)}   { position: static; }
+    .relative#{breakpoint-name($breakpoint-name)} { position: relative; }
+    .absolute#{breakpoint-name($breakpoint-name)} { position: absolute; }
+    .fixed#{breakpoint-name($breakpoint-name)}    { position: fixed; }
+  }
+}

@@ -1,0 +1,8 @@
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+    .ttc#{breakpoint-name($breakpoint-name)} { text-transform: capitalize; }
+    .ttl#{breakpoint-name($breakpoint-name)} { text-transform: lowercase; }
+    .ttu#{breakpoint-name($breakpoint-name)} { text-transform: uppercase; }
+    .ttn#{breakpoint-name($breakpoint-name)} { text-transform: none; }
+  }
+}

@@ -1,0 +1,28 @@
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+    .w1#{breakpoint-name($breakpoint-name)}           { width: 1rem; }
+    .w2#{breakpoint-name($breakpoint-name)}           { width: 2rem; }
+    .w3#{breakpoint-name($breakpoint-name)}           { width: 4rem; }
+    .w4#{breakpoint-name($breakpoint-name)}           { width: 8rem; }
+    .w5#{breakpoint-name($breakpoint-name)}           { width: 16rem; }
+
+    .w-10#{breakpoint-name($breakpoint-name)}         { width: 10%; }
+    .w-20#{breakpoint-name($breakpoint-name)}         { width: 20%; }
+    .w-25#{breakpoint-name($breakpoint-name)}         { width: 25%; }
+    .w-30#{breakpoint-name($breakpoint-name)}         { width: 30%; }
+    .w-33#{breakpoint-name($breakpoint-name)}         { width: 33%; }
+    .w-34#{breakpoint-name($breakpoint-name)}         { width: 34%; }
+    .w-40#{breakpoint-name($breakpoint-name)}         { width: 40%; }
+    .w-50#{breakpoint-name($breakpoint-name)}         { width: 50%; }
+    .w-60#{breakpoint-name($breakpoint-name)}         { width: 60%; }
+    .w-70#{breakpoint-name($breakpoint-name)}         { width: 70%; }
+    .w-75#{breakpoint-name($breakpoint-name)}         { width: 75%; }
+    .w-80#{breakpoint-name($breakpoint-name)}         { width: 80%; }
+    .w-90#{breakpoint-name($breakpoint-name)}         { width: 90%; }
+    .w-100#{breakpoint-name($breakpoint-name)}        { width: 100%; }
+
+    .w-third#{breakpoint-name($breakpoint-name)}      { width: calc(100% / 3); }
+    .w-two-thirds#{breakpoint-name($breakpoint-name)} { width: calc(100% / 1.5); }
+    .w-auto#{breakpoint-name($breakpoint-name)}       { width: auto; }
+  }
+}

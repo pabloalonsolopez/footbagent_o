@@ -1,0 +1,7 @@
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+    .fl#{breakpoint-name($breakpoint-name)} { float: left; _display: inline; }
+    .fr#{breakpoint-name($breakpoint-name)} { float: right; _display: inline; }
+    .fn#{breakpoint-name($breakpoint-name)} { float: none; }
+  }
+}
