@@ -1,0 +1,7 @@
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+    .ls-tight#{breakpoint-name($breakpoint-name)}      { letter-spacing: -.05em; }
+    .ls-separate-1#{breakpoint-name($breakpoint-name)} { letter-spacing: .1em; }
+    .ls-separate-2#{breakpoint-name($breakpoint-name)} { letter-spacing: .25em; }
+  }
+}

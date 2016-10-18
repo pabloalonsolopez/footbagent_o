@@ -1,0 +1,8 @@
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+	.ta-left#{breakpoint-name($breakpoint-name)}    { text-align: left; }
+	.ta-right#{breakpoint-name($breakpoint-name)}   { text-align: right; }
+	.ta-center#{breakpoint-name($breakpoint-name)}  { text-align: center; }
+	.ta-justify#{breakpoint-name($breakpoint-name)} { text-align: justify; }
+  }
+}

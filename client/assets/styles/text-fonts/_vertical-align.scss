@@ -1,0 +1,12 @@
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+	  .va-baseline#{breakpoint-name($breakpoint-name)}   { vertical-align: baseline; }
+	  .va-sub#{breakpoint-name($breakpoint-name)}        { vertical-align: sub; }
+	  .va-super#{breakpoint-name($breakpoint-name)}      { vertical-align: super; }
+    .va-top#{breakpoint-name($breakpoint-name)}        { vertical-align: top; }
+    .va-texttop#{breakpoint-name($breakpoint-name)}    { vertical-align: text-top; }
+    .va-middle#{breakpoint-name($breakpoint-name)}     { vertical-align: middle; }
+    .va-bottom#{breakpoint-name($breakpoint-name)}     { vertical-align: bottom; }
+    .va-textbottom#{breakpoint-name($breakpoint-name)} { vertical-align: text-bottom; }
+  }
+}

@@ -1,0 +1,7 @@
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+    .lh-1#{breakpoint-name($breakpoint-name)} { line-height: 1; }
+    .lh-2#{breakpoint-name($breakpoint-name)} { line-height: 1.25; }
+    .lh-3#{breakpoint-name($breakpoint-name)} { line-height: 1.5; }
+  }
+}

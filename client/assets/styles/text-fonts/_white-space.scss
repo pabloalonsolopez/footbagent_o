@@ -1,0 +1,9 @@
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+	.ws-normal#{breakpoint-name($breakpoint-name)}  { white-space: normal; }
+    .ws-nowrap#{breakpoint-name($breakpoint-name)}  { white-space: nowrap; }
+    .ws-pre#{breakpoint-name($breakpoint-name)}     { white-space: pre; }
+    .ws-prewrap#{breakpoint-name($breakpoint-name)} { white-space: pre-wrap; }
+    .ws-preline#{breakpoint-name($breakpoint-name)} { white-space: pre-line; }
+  }
+}

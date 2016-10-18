@@ -1,0 +1,32 @@
+$spacings: (
+  0: 0,
+  1: .25rem,
+  2: .5rem,
+  3: 1rem,
+  4: 2rem,
+  5: 4rem,
+  6: 8rem,
+  7: 16rem,
+);
+
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+    @each $property-name, $property-abbrev in (margin: m, padding: m) {
+  	  @each $spacing-name, $spacing-value in $spacings {
+        .#{$property-abbrev}-a-#{$spacing-name}#{breakpoint-name($breakpoint-name)} { #{$property-name}: $spacing-value; }
+        .#{$property-abbrev}-h-#{$spacing-name}#{breakpoint-name($breakpoint-name)} {
+          #{$property-name}-right: $spacing-value;
+          #{$property-name}-left: $spacing-value;
+        }
+        .#{$property-abbrev}-v-#{$spacing-name}#{breakpoint-name($breakpoint-name)} {
+          #{$property-name}-top: $spacing-value;
+          #{$property-name}-bottom: $spacing-value;
+        }
+        .#{$property-abbrev}-t-#{$spacing-name}#{breakpoint-name($breakpoint-name)} { #{$property-name}-top: $spacing-value; }
+        .#{$property-abbrev}-r-#{$spacing-name}#{breakpoint-name($breakpoint-name)} { #{$property-name}-right: $spacing-value; }
+        .#{$property-abbrev}-b-#{$spacing-name}#{breakpoint-name($breakpoint-name)} { #{$property-name}-bottom: $spacing-value; }
+        .#{$property-abbrev}-l-#{$spacing-name}#{breakpoint-name($breakpoint-name)} { #{$property-name}-left: $spacing-value; }
+      }
+    }
+  }
+}

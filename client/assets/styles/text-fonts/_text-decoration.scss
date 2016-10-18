@@ -1,0 +1,8 @@
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+	.td-linethrough#{breakpoint-name($breakpoint-name)} { text-decoration: line-through; }
+	.td-underline#{breakpoint-name($breakpoint-name)}   { text-decoration: underline; }
+	.td-overline#{breakpoint-name($breakpoint-name)}    { text-decoration: overline; }
+	.td-none#{breakpoint-name($breakpoint-name)}        { text-decoration: none; }
+  }
+}
