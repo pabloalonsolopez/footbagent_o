@@ -1,0 +1,12 @@
+.collapse {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@each $color-name, $color-value in $colors {
+  .striped--#{$color-name} {
+  	&:nth-child(odd) {
+  	  background-color: $color-value;
+    }
+  }
+}

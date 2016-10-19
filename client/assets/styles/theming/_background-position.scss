@@ -1,0 +1,28 @@
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+    .bg-center#{breakpoint-name($breakpoint-name)} { 
+      background-repeat: no-repeat;
+      background-position: center center; 
+    }
+
+    .bg-top#{breakpoint-name($breakpoint-name)} {    
+      background-repeat: no-repeat; 
+      background-position: top center;    
+    }
+
+    .bg-right#{breakpoint-name($breakpoint-name)} {  
+      background-repeat: no-repeat; 
+      background-position: center right;  
+    }
+
+    .bg-bottom#{breakpoint-name($breakpoint-name)} { 
+      background-repeat: no-repeat; 
+      background-position: bottom center; 
+    }
+
+    .bg-left#{breakpoint-name($breakpoint-name)} {   
+      background-repeat: no-repeat; 
+      background-position: center left;   
+    }
+  }
+}

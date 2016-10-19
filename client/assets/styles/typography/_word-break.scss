@@ -1,0 +1,7 @@
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+    .word-normal#{breakpoint-name($breakpoint-name)} { word-break: normal; }
+    .word-wrap#{breakpoint-name($breakpoint-name)}   { word-break: break-all; }
+    .word-nowrap#{breakpoint-name($breakpoint-name)} { word-break: keep-all; }
+  }
+}
