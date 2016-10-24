@@ -6,7 +6,7 @@ import { Router, Event, NavigationEnd } from '@angular/router'
   selector: 'fb-footer',
   templateUrl: 'footer.component.html',
   host: {
-    class: 'flex(0)'
+    class: 'flex(0) bg(white)'
   }
 })
 

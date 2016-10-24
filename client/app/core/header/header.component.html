@@ -1,16 +1,21 @@
-<<<<<<< HEAD
-<div class="d(flex) ai(center) jc(space-between) bbw(1px) bbs(solid) bbc(gray3) px(2rem) py(1rem)" *ngIf="visible">
-  <a class="f(2.4rem) c(blue) icon-logo" routerLink=""></a>
-  <nav>
-  	<a class="c(gray1) c-hover(blue)" routerLink="/login">Inicia sesión</a>
-  	<a class="c(gray1) c-hover(blue) ml(1rem)" routerLink="/signup">Crea una cuenta</a>
+<div class="d(flex) ai(center) jc(space-between) bbw(3px) bbs(solid) bbc(blue) px(2rem) py(1rem)" *ngIf="visible">
+  <a class="f(3rem) c(blue) c-hover(blue-95) icon-logo td(none) t(color)" routerLink=""></a>
+  <nav class="d(flex) ai(center)">
+  	<a class="bw(1px) bs(solid) bc(blue) bc-hover(blue-95) br(2px) bg(blue) px(1.4rem) py(0.7rem) bg-hover(blue-95) c(white) td(none) t(all) fw(600) lh(1)" routerLink="/login">Inicia sesión</a>
+  	<a class="bw(1px) bs(solid) bc(blue) bc-hover(blue-95) br(2px) bg(white) px(1.4rem) py(0.7rem) bg-hover(blue-95) c(blue) c-hover(white) td(none) t(all) fw(600) lh(1) ml(2rem)" routerLink="/signup">Crea una cuenta</a>
+    <div class="po(relative) ml(2rem)">
+  	  <a class="cu(pointer)"><img class="d(block) w(3rem) h(3rem) br(2px)" src="assets/images/avatar-example.jpg"></a>
+  	  <div class="po(absolute) top(6rem) right(0) bg(white) bw(1px) bs(solid) bc(gray3) br(2px) boxs(1)">
+  	    <div class="bbw(1px) bbs(solid) bbc(gray3) p(2rem)">
+  	      <img class="d(block) w(8rem) h(8rem) br(100%) center() mb(1rem)" src="assets/images/avatar-example.jpg">
+  	      <p class="f(1.6rem) fw(600) ta(center) lh(1.25)">Pablo Alonso</p>
+          <p class="c(gray1) ta(center)">pabloalonsolopez@gmail.com</p>
+  	    </div>
+  	    <nav>
+  	      <a class="d(block) px(2rem) py(1rem) bbw(1px) bbs(solid) bbc(gray3) c(gray1) c-hover(blue) td(none)" routerLink="/settings">Configuración</a>
+  	      <a class="d(block) px(2rem) py(1rem) c(gray1) c-hover(blue)">Cerrar sesión</a>
+  	    </nav>
+  	  </div>
+  	</div>
   </nav>
-=======
-<div *ngIf="visible">
-  <a class="icon-logo" routerLink=""></a>
-  <ul>
-    <li><a routerLink="/login">Login</a></li>
-    <li><a routerLink="/signup">Signup</a></li>
-  </ul>
->>>>>>> 827d5992a68391e2845be07996d9efdcec00a8d4
 </div>

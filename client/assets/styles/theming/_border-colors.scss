@@ -1,3 +1,0 @@
-@each $color-name, $color-value in $colors {
-  .b--#{$color-name} { border-color: $color-value; }
-}

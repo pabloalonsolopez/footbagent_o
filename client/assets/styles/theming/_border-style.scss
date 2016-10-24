@@ -1,8 +1,0 @@
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
-  @include media($breakpoint-name) {
-    .b--dotted#{breakpoint-name($breakpoint-name)} { border-style: dotted; }
-    .b--dashed#{breakpoint-name($breakpoint-name)} { border-style: dashed; }
-    .b--solid#{breakpoint-name($breakpoint-name)}  { border-style: solid; }
-    .b--none#{breakpoint-name($breakpoint-name)}   { border-style: none; }
-  }
-}

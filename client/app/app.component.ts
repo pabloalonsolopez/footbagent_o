@@ -7,7 +7,7 @@ import './rxjs-operators'
   selector: 'fb-app',
   templateUrl: 'app.component.html',
   host: {
-  	class: 'd(flex) fd(column) h(100vh) lh(1.5) ff(proxima) fw(400) f(1.4rem) c(black)'
+  	class: 'd(flex) minh(100%) fd(column) lh(1.5) ff(proxima) fw(400) f(1.4rem) c(black)'
   }
 })
 

@@ -6,4 +6,10 @@
 
 html { font-size: 62.5%; }
 
+html, body { height: 100%; }
+
+h1 { margin: 0; }
+
+input, button { font-family: "Proxima Nova"; }
+
 @include generate-classes($dictionary);

@@ -1,6 +1,0 @@
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
-  @include media($breakpoint-name) {
-    .cover#{breakpoint-name($breakpoint-name)}   { background-size: cover !important; }
-    .contain#{breakpoint-name($breakpoint-name)} { background-size: contain !important; }
-  }
-}

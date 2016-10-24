@@ -5,7 +5,7 @@ import { Component } from '@angular/core'
   selector: 'fb-login',
   templateUrl: 'login.component.html',
   host: {
-    class: 'max-w1 px-3 flex-hvcenter'
+  	class: 'w(100%) mw(1) m(auto) p(2rem)'
   }
 })
 

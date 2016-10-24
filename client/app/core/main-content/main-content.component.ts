@@ -5,7 +5,7 @@ import { Component } from '@angular/core'
   selector: 'fb-main-content',
   templateUrl: 'main-content.component.html',
   host: {
-  	class: 'flex(1)'
+  	class: 'flex(1) d(flex) flex(column)'
   }
 })
 

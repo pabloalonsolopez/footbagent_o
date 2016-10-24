@@ -9,6 +9,7 @@ import { ResetPasswordConfirmComponent } from './reset-password-confirm/reset-pa
 import { TermsComponent } from './terms/terms.component'
 import { PrivacyComponent } from './privacy/privacy.component'
 import { CookiesComponent } from './cookies/cookies.component'
+import { SettingsComponent } from './settings/settings.component'
 
 const routes: Routes = [
   {
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'cookies',
     component: CookiesComponent
+  },
+  {
+    path: 'settings',
+    component: SettingsComponent
   }
 ]
 

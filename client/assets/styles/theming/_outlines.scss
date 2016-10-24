@@ -1,7 +1,0 @@
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
-  @include media($breakpoint-name) {
-    .outline#{breakpoint-name($breakpoint-name)}             { outline: 1px solid; }
-    .outline-transparent#{breakpoint-name($breakpoint-name)} { outline: 1px solid transparent; }
-    .outline-0#{breakpoint-name($breakpoint-name)}           { outline: 0; }
-  }
-}
