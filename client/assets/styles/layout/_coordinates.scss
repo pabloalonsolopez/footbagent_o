@@ -1,0 +1,35 @@
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+    .top-0#{breakpoint-name($breakpoint-name)}     { top:    0; }
+    .right-0#{breakpoint-name($breakpoint-name)}   { right:  0; }
+    .bottom-0#{breakpoint-name($breakpoint-name)}  { bottom: 0; }
+    .left-0#{breakpoint-name($breakpoint-name)}    { left:   0; }
+
+    .top-1#{breakpoint-name($breakpoint-name)}     { top:    1rem; }
+    .right-1#{breakpoint-name($breakpoint-name)}   { right:  1rem; }
+    .bottom-1#{breakpoint-name($breakpoint-name)}  { bottom: 1rem; }
+    .left-1#{breakpoint-name($breakpoint-name)}    { left:   1rem; }
+
+    .top-2#{breakpoint-name($breakpoint-name)}     { top:    2rem; }
+    .right-2#{breakpoint-name($breakpoint-name)}   { right:  2rem; }
+    .bottom-2#{breakpoint-name($breakpoint-name)}  { bottom: 2rem; }
+    .left-2#{breakpoint-name($breakpoint-name)}    { left:   2rem; }
+
+    .top--1#{breakpoint-name($breakpoint-name)}    { top:    -1rem; }
+    .right--1#{breakpoint-name($breakpoint-name)}  { right:  -1rem; }
+    .bottom--1#{breakpoint-name($breakpoint-name)} { bottom: -1rem; }
+    .left--1#{breakpoint-name($breakpoint-name)}   { left:   -1rem; }
+
+    .top--2#{breakpoint-name($breakpoint-name)}    { top:    -2rem; }
+    .right--2#{breakpoint-name($breakpoint-name)}  { right:  -2rem; }
+    .bottom--2#{breakpoint-name($breakpoint-name)} { bottom: -2rem; }
+    .left--2#{breakpoint-name($breakpoint-name)}   { left:   -2rem; }
+
+    .absolute--fill#{breakpoint-name($breakpoint-name)} {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

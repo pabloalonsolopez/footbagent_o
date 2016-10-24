@@ -1,0 +1,27 @@
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+    .br0#{breakpoint-name($breakpoint-name)}     { border-radius: 0; }
+    .br1#{breakpoint-name($breakpoint-name)}     { border-radius: .125rem; }
+    .br2#{breakpoint-name($breakpoint-name)}     { border-radius: .25rem; }
+    .br3#{breakpoint-name($breakpoint-name)}     { border-radius: .5rem; }
+    .br4#{breakpoint-name($breakpoint-name)}     { border-radius: 1rem; }
+    .br-100#{breakpoint-name($breakpoint-name)}  { border-radius: 100%; }
+    .br-pill#{breakpoint-name($breakpoint-name)} { border-radius: 9999px; }
+    .br--bottom#{breakpoint-name($breakpoint-name)} {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+    .br--top#{breakpoint-name($breakpoint-name)} {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .br--right#{breakpoint-name($breakpoint-name)} {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    .br--left#{breakpoint-name($breakpoint-name)} {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+}

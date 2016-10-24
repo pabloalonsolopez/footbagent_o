@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "vendors/normalize";
 
 @import "tools/variables";
@@ -8,3 +9,63 @@
 @import "components/fonts";
 @import "components/icons";
 @import "components/link";
+=======
+@import "variables";
+
+@import "dependencies/colors";
+@import "dependencies/fonts";
+@import "dependencies/media-queries";
+@import "dependencies/normalize";
+
+@import "elements/forms";
+@import "elements/icons";
+@import "elements/images";
+@import "elements/links";
+@import "elements/lists";
+@import "elements/tables";
+
+@import "layout/box-sizing";
+@import "layout/clears";
+@import "layout/coordinates";
+@import "layout/display";
+@import "layout/flexbox";
+@import "layout/floats";
+@import "layout/heights";
+@import "layout/max-widths";
+@import "layout/overflow";
+@import "layout/position";
+@import "layout/spacing";
+@import "layout/utilities";
+@import "layout/widths";
+@import "layout/z-index";
+
+@import "theming/background-position";
+@import "theming/background-size";
+@import "theming/border-colors";
+@import "theming/border-radius";
+@import "theming/border-style";
+@import "theming/border-widths";
+@import "theming/borders";
+@import "theming/box-shadow";
+@import "theming/hovers";
+@import "theming/opacity";
+@import "theming/outlines";
+@import "theming/skins";
+@import "theming/skins-pseudo";
+
+@import "typography/code";
+@import "typography/font-family";
+@import "typography/font-style";
+@import "typography/font-weight";
+@import "typography/letter-spacing";
+@import "typography/line-height";
+@import "typography/text-align";
+@import "typography/text-decoration";
+@import "typography/text-transform";
+@import "typography/type-scale";
+@import "typography/typography";
+@import "typography/vertical-align";
+@import "typography/visibility";
+@import "typography/white-space";
+@import "typography/word-break";
+>>>>>>> 827d5992a68391e2845be07996d9efdcec00a8d4

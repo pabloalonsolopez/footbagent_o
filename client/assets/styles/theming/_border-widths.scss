@@ -1,0 +1,15 @@
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+    .bw0#{breakpoint-name($breakpoint-name)}  { border-width: 0; }
+    .bw1#{breakpoint-name($breakpoint-name)}  { border-width: .125rem; }
+    .bw2#{breakpoint-name($breakpoint-name)}  { border-width: .25rem; }
+    .bw3#{breakpoint-name($breakpoint-name)}  { border-width: .5rem; }
+    .bw4#{breakpoint-name($breakpoint-name)}  { border-width: 1rem; }
+    .bw5#{breakpoint-name($breakpoint-name)}  { border-width: 2rem; }
+
+    .bt-0#{breakpoint-name($breakpoint-name)} { border-top-width: 0; }
+    .br-0#{breakpoint-name($breakpoint-name)} { border-right-width: 0; }
+    .bb-0#{breakpoint-name($breakpoint-name)} { border-bottom-width: 0; }
+    .bl-0#{breakpoint-name($breakpoint-name)} { border-left-width: 0; }
+  }
+}

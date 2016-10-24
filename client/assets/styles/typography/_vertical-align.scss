@@ -1,0 +1,8 @@
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  @include media($breakpoint-name) {
+	.v-base#{breakpoint-name($breakpoint-name)} { vertical-align: baseline; }
+    .v-mid#{breakpoint-name($breakpoint-name)}  { vertical-align: middle; }
+    .v-top#{breakpoint-name($breakpoint-name)}  { vertical-align: top; }
+    .v-btm#{breakpoint-name($breakpoint-name)}  { vertical-align: bottom; }
+  }
+}

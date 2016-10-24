@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="d(flex) ai(center) jc(space-between) btw(1px) bts(solid) btc(gray3) px(2rem) py(1rem)" *ngIf="visible">
   <p class="f(1.3rem)">&copy; 2016 Footbagent</p>
   <nav>
@@ -5,4 +6,12 @@
   	<a class="ml(1rem) f(1.3rem) c(gray2) c-hover(blue)" routerLink="/privacy" routerLinkActive="is-active">Política de privacidad</a>
   	<a class="ml(1rem) f(1.3rem) c(gray2) c-hover(blue)" routerLink="/cookies" routerLinkActive="is-active">Política de cookies</a>
   </nav>
+=======
+<div *ngIf="visible">
+  <span>&copy; 2016 Footbagent</span>
+  <ul>
+    <li><a routerLink="/privacy" routerLinkActive="active">Privacy Policy</a></li>
+    <li><a routerLink="/terms" routerLinkActive="active">Terms of Use</a></li>
+  </ul>
+>>>>>>> 827d5992a68391e2845be07996d9efdcec00a8d4
 </div>
