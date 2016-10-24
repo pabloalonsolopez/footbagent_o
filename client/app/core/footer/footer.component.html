@@ -1,3 +1,8 @@
-<div *ngIf="visible">
-  Footer
+<div class="d(flex) ai(center) jc(space-between) btw(1px) bts(solid) btc(gray3) px(2rem) py(1rem)" *ngIf="visible">
+  <p class="f(1.3rem)">&copy; 2016 Footbagent</p>
+  <nav>
+  	<a class="f(1.3rem) c(gray2) c-hover(blue)" routerLink="/terms" routerLinkActive="is-active">Términos de uso</a>
+  	<a class="ml(1rem) f(1.3rem) c(gray2) c-hover(blue)" routerLink="/privacy" routerLinkActive="is-active">Política de privacidad</a>
+  	<a class="ml(1rem) f(1.3rem) c(gray2) c-hover(blue)" routerLink="/cookies" routerLinkActive="is-active">Política de cookies</a>
+  </nav>
 </div>

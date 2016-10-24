@@ -1,7 +1,0 @@
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
-  @include media($breakpoint-name) {
-    .strike#{breakpoint-name($breakpoint-name)}       { text-decoration: line-through; }
-    .underline#{breakpoint-name($breakpoint-name)}    { text-decoration: underline; }
-    .no-underline#{breakpoint-name($breakpoint-name)} { text-decoration: none; }
-  }
-}

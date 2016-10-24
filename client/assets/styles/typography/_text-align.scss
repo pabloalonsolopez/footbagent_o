@@ -1,7 +1,0 @@
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
-  @include media($breakpoint-name) {
-    .tl#{breakpoint-name($breakpoint-name)} { text-align: left; }
-    .tr#{breakpoint-name($breakpoint-name)} { text-align: right; }
-    .tc#{breakpoint-name($breakpoint-name)} { text-align: center; }
-  }
-}

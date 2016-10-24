@@ -6,8 +6,9 @@ import { LoginComponent } from './login/login.component'
 import { SignupComponent } from './signup/signup.component'
 import { ResetPasswordComponent } from './reset-password/reset-password.component'
 import { ResetPasswordConfirmComponent } from './reset-password-confirm/reset-password-confirm.component'
-import { PrivacyComponent } from './privacy/privacy.component'
 import { TermsComponent } from './terms/terms.component'
+import { PrivacyComponent } from './privacy/privacy.component'
+import { CookiesComponent } from './cookies/cookies.component'
 
 const routes: Routes = [
   {
@@ -31,12 +32,16 @@ const routes: Routes = [
     component: ResetPasswordConfirmComponent
   },
   {
+    path: 'terms',
+    component: TermsComponent
+  },
+  {
     path: 'privacy',
     component: PrivacyComponent
   },
   {
-    path: 'terms',
-    component: TermsComponent
+    path: 'cookies',
+    component: CookiesComponent
   }
 ]
 

@@ -11,8 +11,9 @@ import { LoginComponent } from './login/login.component'
 import { SignupComponent } from './signup/signup.component'
 import { ResetPasswordComponent } from './reset-password/reset-password.component'
 import { ResetPasswordConfirmComponent } from './reset-password-confirm/reset-password-confirm.component'
-import { PrivacyComponent } from './privacy/privacy.component'
 import { TermsComponent } from './terms/terms.component'
+import { PrivacyComponent } from './privacy/privacy.component'
+import { CookiesComponent } from './cookies/cookies.component'
 
 @NgModule({
   imports: [
@@ -28,8 +29,9 @@ import { TermsComponent } from './terms/terms.component'
     SignupComponent,
     ResetPasswordComponent,
     ResetPasswordConfirmComponent,
+    TermsComponent,
     PrivacyComponent,
-    TermsComponent
+    CookiesComponent
   ],
   exports: [
     HeaderComponent,
@@ -40,8 +42,9 @@ import { TermsComponent } from './terms/terms.component'
     SignupComponent,
     ResetPasswordComponent,
     ResetPasswordConfirmComponent,
+    TermsComponent,
     PrivacyComponent,
-    TermsComponent
+    CookiesComponent
   ]
 })
 

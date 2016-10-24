@@ -99,7 +99,7 @@ gulp.task('build:server:client:prod', function(cb) {
           .pipe(concat('styles.min.css'))
           .pipe(sass().on('error', sass.logError))
           .pipe(autoprefixer())
-          .pipe(cleancss())
+          //.pipe(cleancss())
           .pipe(gulp.dest('dist/public/assets/styles'))
           .pipe(browsersync.stream())
       })

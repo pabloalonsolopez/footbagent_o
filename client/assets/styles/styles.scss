@@ -1,26 +1,10 @@
-@import 'dependencies/fonts';
-@import 'dependencies/media-queries';
-@import 'dependencies/normalize';
+@import "vendors/normalize";
 
-@import 'layout/box-sizing';
-@import 'layout/clears';
-@import 'layout/display';
-@import 'layout/floats';
-@import 'layout/heights';
-@import 'layout/max-widths';
-@import 'layout/position';
-@import 'layout/spacing';
-@import 'layout/widths';
+@import "tools/variables";
+@import "tools/functions";
+@import "tools/mixins";
 
-@import 'typography/font-family';
-@import 'typography/font-style';
-@import 'typography/font-weight';
-@import 'typography/letter-spacing';
-@import 'typography/line-height';
-@import 'typography/text-align';
-@import 'typography/text-decoration';
-@import 'typography/text-transform';
-@import 'typography/type-scale';
-@import 'typography/typography';
-@import 'typography/vertical-align';
-@import 'typography/white-space';
+@import "components/base";
+@import "components/fonts";
+@import "components/icons";
+@import "components/link";

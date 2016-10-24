@@ -1,0 +1,242 @@
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$font-families: (
+  proxima: "Proxima Nova"
+);
+
+$font-sizes: (
+  1.1rem: 1.1rem,
+  1.3rem: 1.3rem,
+  1.4rem: 1.4rem,
+  1.6rem: 1.6rem,
+  2.4rem: 2.4rem,
+  2.8rem: 2.8rem,
+  3.4rem: 3.4rem
+);
+
+$font-weights: (
+  100: 100,
+  200: 200,
+  300: 300,
+  400: 400,
+  500: 500,
+  600: 600,
+  700: 700,
+  800: 800,
+  900: 900
+);
+
+$line-heights: (
+  1: 1,
+  1.25: 1.25,
+  1.5: 1.5
+);
+
+$text-alignments: (
+  left: left,
+  center: center,
+  right: right,
+  justify: justify
+);
+
+$colors: (
+  white: #FFFFFF,
+  gray1: #818791,
+  gray2: #BDC3CD,
+  gray3: #E8EBF1,
+  black: #20252C,
+  blue: #478AFF
+);
+
+$border-radiuses: (
+  0: 0,
+  1px: 1px,
+  2px: 2px,
+  3px: 3px,
+  4px: 4px,
+  pill: 9999px,
+  100%: 100%
+);
+
+$border-styles: (
+  solid: solid
+);
+
+$border-widths: (
+  1px: 1px,
+  2px: 2px
+);
+
+$heights: (
+  100vh: 100vh,
+  100%: 100%
+);
+
+$widths: (
+  100%: 100%
+);
+
+$max-widths: (
+  1: 300px,
+  2: 576px,
+  3: 768px,
+  4: 992px,
+  5: 1200px
+);
+
+$displays: (
+  block: block,
+  inline-block: inline-block,
+  flex: flex,
+  inline-flex: inline-flex
+);
+
+$flex-directions: (
+  row: row,
+  column: column
+);
+
+$flex-wraps: (
+  wrap: wrap
+);
+
+$flex-alignments: (
+  flex-start: flex-start,
+  flex-end: flex-end,
+  center: center,
+  baseline: baseline,
+  stretch: stretch
+);
+
+$flex-justifiers: (
+  flex-start: flex-start,
+  flex-end: flex-end,
+  center: center,
+  space-between: space-between,
+  space-around: space-around
+);
+
+$flex-contents: (
+  flex-start: flex-start,
+  flex-end: flex-end,
+  center: center,
+  space-between: space-between,
+  space-around: space-around,
+  stretch: stretch
+);
+
+$flex-orders: (
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+  6: 6,
+  7: 7,
+  8: 8,
+  last: 99999
+);
+
+$flex-types: (
+  1: 1,
+  0: 0
+);
+
+$spacings: (
+  auto: auto,
+  0: 0,
+  0.2rem: 0.2rem,
+  0.4rem: 0.4rem,
+  0.6rem: 0.6rem,
+  0.8rem: 0.8rem,
+  1rem: 1rem,
+  1.2rem: 1.2rem,
+  1.4rem: 1.4rem,
+  1.6rem: 1.6rem,
+  1.8rem: 1.8rem,
+  2rem: 2rem
+);
+
+$dictionary: (
+  (ac,         align-content,                 $flex-contents,   null),
+  (ai,         align-items,                   $flex-alignments, null),
+  (as,         align-self,                    $flex-alignments, null),
+  (bbc,        border-bottom-color,           $colors,          null),
+  (bbc-active, border-bottom-color,           $colors,          ".is-active"),
+  (bbc-focus,  border-bottom-color,           $colors,          ":focus"),
+  (bbc-hover,  border-bottom-color,           $colors,          ":hover"),
+  (bblr,       border-bottom-left-radius,     $border-radiuses, null),
+  (bbrr,       border-bottom-right-radius,    $border-radiuses, null),
+  (bbs,        border-bottom-style,           $border-styles,   null),
+  (bbw,        border-bottom-width,           $border-widths,   null),
+  (bc,         border-color,                  $colors,          null),
+  (bc-active,  border-color,                  $colors,          ".is-active"),
+  (bc-focus,   border-color,                  $colors,          ":focus"),
+  (bc-hover,   border-color,                  $colors,          ":hover"),
+  (bg,         background-color,              $colors,          null),
+  (bg-active,  background-color,              $colors,          ".is-active"),
+  (bg-focus,   background-color,              $colors,          ":focus"),
+  (bg-hover,   background-color,              $colors,          ":hover"),
+  (blc,        border-left-color,             $colors,          null),
+  (blc-active, border-left-color,             $colors,          ".is-active"),
+  (blc-focus,  border-left-color,             $colors,          ":focus"),
+  (blc-hover,  border-left-color,             $colors,          ":hover"),
+  (bls,        border-left-style,             $border-styles,   null),
+  (blw,        border-left-width,             $border-widths,   null),
+  (br,         border-radius,                 $border-radiuses, null),
+  (brc,        border-right-color,            $colors,          null),
+  (brc-active, border-right-color,            $colors,          ".is-active"),
+  (brc-focus,  border-right-color,            $colors,          ":focus"),
+  (brc-hover,  border-right-color,            $colors,          ":hover"),
+  (brs,        border-right-style,            $border-styles,   null),
+  (brw,        border-right-width,            $border-widths,   null),
+  (bs,         border-style,                  $border-styles,   null),
+  (btc,        border-top-color,              $colors,          null),
+  (btc-active, border-top-color,              $colors,          ".is-active"),
+  (btc-focus,  border-top-color,              $colors,          ":focus"),
+  (btc-hover,  border-top-color,              $colors,          ":hover"),
+  (btlr,       border-top-left-radius,        $border-radiuses, null),
+  (btrr,       border-top-right-radius,       $border-radiuses, null),
+  (bts,        border-top-style,              $border-styles,   null),
+  (btw,        border-top-width,              $border-widths,   null),
+  (bw,         border-width,                  $border-widths,   null),
+  (c,          color,                         $colors,          null),
+  (c-active,   color,                         $colors,          ".is-active"),
+  (c-hover,    color,                         $colors,          ":hover"),
+  (c-focus,    color,                         $colors,          ":focus"),
+  (d,          display,                       $displays,        null),
+  (f,          font-size,                     $font-sizes,      null),
+  (fd,         flex-direction,                $flex-directions, null),
+  (ff,         font-family,                   $font-families,   null),
+  (flex,       flex,                          $flex-types,      null),
+  (fo,         order,                         $flex-orders,     null),
+  (fw,         font-weight,                   $font-weights,    null),
+  (fw,         flex-wrap,                     $flex-wraps,      null),
+  (h,          height,                        $heights,         null),
+  (jc,         justify-content,               $flex-justifiers, null),
+  (lh,         line-height,                   $line-heights,    null),
+  (m,          margin,                        $spacings,        null),
+  (mb,         margin-bottom,                 $spacings,        null),
+  (ml,         margin-left,                   $spacings,        null),
+  (mr,         margin-right,                  $spacings,        null),
+  (mt,         margin-top,                    $spacings,        null),
+  (mw,         max-width,                     $max-widths,      null),
+  (mx,         (margin-left, margin-right),   $spacings,        null),
+  (my,         (margin-top, margin-bottom),   $spacings,        null),
+  (p,          padding,                       $spacings,        null),
+  (pb,         padding-bottom,                $spacings,        null),
+  (pt,         padding-top,                   $spacings,        null),
+  (pl,         padding-left,                  $spacings,        null),
+  (pr,         padding-right,                 $spacings,        null),
+  (px,         (padding-left, padding-right), $spacings,        null),
+  (py,         (padding-top, padding-bottom), $spacings,        null),
+  (ta,         text-align,                    $text-alignments, null),
+  (w,          width,                         $widths,          null)
+);

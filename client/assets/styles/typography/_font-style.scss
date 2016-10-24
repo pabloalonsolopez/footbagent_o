@@ -1,6 +1,0 @@
-@each $breakpoint-name, $breakpoint-value in $breakpoints {
-  @include media($breakpoint-name) {
-    .i#{breakpoint-name($breakpoint-name)}         { font-style: italic; }
-    .fs-normal#{breakpoint-name($breakpoint-name)} { font-style: normal; }
-  }
-}
