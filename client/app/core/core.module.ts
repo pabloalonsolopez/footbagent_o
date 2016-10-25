@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core'
-import { CommonModule } from '@angular/common'
+
+import { SharedModule } from '../shared/shared.module'
 
 import { RoutingModule } from './core.routing'
 
@@ -14,11 +15,10 @@ import { ResetPasswordConfirmComponent } from './reset-password-confirm/reset-pa
 import { TermsComponent } from './terms/terms.component'
 import { PrivacyComponent } from './privacy/privacy.component'
 import { CookiesComponent } from './cookies/cookies.component'
-import { SettingsComponent } from './settings/settings.component'
 
 @NgModule({
   imports: [
-    CommonModule,
+    SharedModule,
     RoutingModule
   ],
   declarations: [
@@ -32,8 +32,7 @@ import { SettingsComponent } from './settings/settings.component'
     ResetPasswordConfirmComponent,
     TermsComponent,
     PrivacyComponent,
-    CookiesComponent,
-    SettingsComponent
+    CookiesComponent
   ],
   exports: [
     HeaderComponent,
@@ -46,8 +45,7 @@ import { SettingsComponent } from './settings/settings.component'
     ResetPasswordConfirmComponent,
     TermsComponent,
     PrivacyComponent,
-    CookiesComponent,
-    SettingsComponent
+    CookiesComponent
   ]
 })
 

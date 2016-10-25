@@ -16,6 +16,7 @@
 
 @function arg($string) {
   $string: "\\(" + $string + "\\)";
+  $string: str-replace($string, "/", "\\/");
   $string: str-replace($string, "#", "\\#");
   $string: str-replace($string, ".", "\\.");
   $string: str-replace($string, "%", "\\%");

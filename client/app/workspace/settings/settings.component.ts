@@ -5,7 +5,7 @@ import { Component } from '@angular/core'
   selector: 'fb-settings',
   templateUrl: 'settings.component.html',
   host: {
-  	class: 'w(100%) mw(5) center() p(1rem)'
+  	class: 'w(100%)'
   }
 })
 

@@ -49,11 +49,15 @@ $text-alignments: (
 );
 
 $colors: (
+  transparent: transparent,
   white: #FFFFFF,
-  gray1: #818791,
-  gray2: #BDC3CD,
-  gray3: #E8EBF1,
-  black: #20252C,
+  gray6: #F7F8FB,
+  gray5: #EEF1F6,
+  gray4: #E7EBF3,
+  gray3: #CFD7E6,
+  gray2: #96A3B6,
+  gray1: #596981,
+  black: #3F3F44,
   blue: #478AFF,
   blue-95: lighten(#478AFF, 5%),
   red: #FF3333,
@@ -98,7 +102,8 @@ $widths: (
   3rem: 3rem,
   4rem: 4rem,
   8rem: 8rem,
-  10rem: 10rem
+  10rem: 10rem,
+  17: (calc(100% / 7))
 );
 
 $max-widths: (
@@ -170,6 +175,7 @@ $flex-types: (
 
 $spacings: (
   auto: auto,
+  -0.1rem: -0.1rem,
   0: 0,
   0.2rem: 0.2rem,
   0.4rem: 0.4rem,
@@ -222,8 +228,10 @@ $positions: (
 );
 
 $box-shadows: (
-  1: 0 0 4px 0 rgba(0, 0, 0, 0.1)
+  1: (0 3px 20px rgba(89, 105, 129, .3), 0 1px 2px rgba(0, 0, 0, .05), 0 0 0 1px rgba(89, 105, 129, .1))
 );
+
+
 
 $dictionary: (
   (ac,              align-content,                      $flex-contents,        null),

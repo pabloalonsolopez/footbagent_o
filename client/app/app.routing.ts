@@ -6,6 +6,10 @@ const routes: Routes = [
     path: '',
     redirectTo: '/home',
     pathMatch: 'full'
+  },
+  {
+    path: 'workspace',
+    loadChildren: 'app/workspace/workspace.module#WorkspaceModule'
   }
 ]
 
