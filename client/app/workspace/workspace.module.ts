@@ -5,8 +5,13 @@ import { SharedModule } from '../shared/shared.module'
 import { RoutingModule } from './workspace.routing'
 
 import { WorkspaceComponent } from './workspace.component'
-import { AgendaComponent } from './agenda/agenda.component'
 import { SettingsComponent } from './settings/settings.component'
+import { AgendaComponent } from './agenda/agenda.component'
+import { ResourcesListComponent } from './resources/resources-list.component'
+import { ResourceNewComponent } from './resources/resource-new.component'
+import { ResourceDetailComponent } from './resources/resource-detail.component'
+
+import { ResourceService } from './resources/resource.service'
 
 @NgModule({
   imports: [
@@ -15,8 +20,14 @@ import { SettingsComponent } from './settings/settings.component'
   ],
   declarations: [
     WorkspaceComponent,
+    SettingsComponent,
     AgendaComponent,
-    SettingsComponent
+    ResourcesListComponent,
+    ResourceNewComponent,
+    ResourceDetailComponent
+  ],
+  providers: [
+    ResourceService
   ]
 })
 

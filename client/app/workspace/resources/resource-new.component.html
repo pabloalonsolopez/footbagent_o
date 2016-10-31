@@ -1,0 +1,86 @@
+<form [formGroup]="resourceForm" (ngSubmit)="submit()">
+  <label for="name">Name</label>
+  <input type="text" id="name" formControlName="name">
+  <label for="knownAs">Known as</label>
+  <input type="text" id="knownAs" formControlName="knownAs">
+  <label for="dateOfBirth">Date of birth</label>
+  <input type="date" id="dateOfBirth" formControlName="dateOfBirth">
+  <label for="cityOfBirth">City of birth</label>
+  <input type="text" id="cityOfBirth" formControlName="cityOfBirth">
+  <label for="stateOfBirth">State of birth</label>
+  <input type="text" id="stateOfBirth" formControlName="stateOfBirth">
+  <label for="countryOfBirth">Country of birth</label>
+  <input type="text" id="countryOfBirth" formControlName="countryOfBirth">
+  <label for="maritalStatus">Marital status</label>
+  <select id="maritalStatus" formControlName="maritalStatus">
+    <option value="" disabled selected hidden>Select marital status...</option>
+    <option value="single">Single</option>
+    <option value="married">Married</option>
+  </select>
+  <label for="children">Children</label>
+  <input type="number" id="children" formControlName="children">
+  <label for="height">Height</label>
+  <input type="number" id="height" formControlName="height">
+  <label for="weight">Weight</label>
+  <input type="number" id="weight" formControlName="weight">
+  <label for="preferredFoot">Preferred foot</label>
+  <select id="preferredFoot" formControlName="preferredFoot">
+    <option value="" disabled selected hidden>Select preferred foot...</option>
+    <option value="left">Left</option>
+    <option value="right">Right</option>
+    <option value="both">Both</option>
+  </select>
+  <div formGroupName="mainPosition">
+    <label for="name">Main position</label>
+    <select id="name" formControlName="name">
+      <option value="" disabled selected hidden>Select main position...</option>
+      <option value="DC">DC</option>
+      <option value="SD">SD</option>
+      <option value="EI">EI</option>
+      <option value="ED">ED</option>
+    </select>
+  </div>
+  <div formArrayName="otherPositions">
+    <div *ngFor="let otherPosition of resourceForm.controls.otherPositions.controls; let i = index">
+      <div [formGroupName]="i">
+        <label for="name">Position</label>
+        <select id="name" formControlName="name">
+          <option value="" disabled selected hidden>Select other position...</option>
+          <option value="DC">DC</option>
+          <option value="SD">SD</option>
+          <option value="EI">EI</option>
+          <option value="ED">ED</option>
+        </select>
+      </div>
+      <a class="button" (click)="removePosition(i)">Remove position</a>
+    </div>
+    <a class="button" (click)="addPosition()">Add position</a>
+  </div>
+  <label for="phone">Phone</label>
+  <input type="text" id="phone" formControlName="phone">
+  <label for="email">Email</label>
+  <input type="text" id="email" formControlName="email">
+  <label for="website">Website</label>
+  <input type="text" id="website" formControlName="website">
+  <label for="twitter">Twitter</label>
+  <input type="text" id="twitter" formControlName="twitter">
+  <label for="facebook">Facebook</label>
+  <input type="text" id="facebook" formControlName="facebook">
+  <label for="instagram">Instagram</label>
+  <input type="text" id="instagram" formControlName="instagram">
+  <div formArrayName="languages">
+    <div *ngFor="let language of resourceForm.controls.languages.controls; let i = index">
+      <div [formGroupName]="i">
+        <label for="name">Language</label>
+        <input type="text" id="name" formControlName="name">
+        <label for="level">Level</label>
+        <input type="number" id="level" formControlName="level">
+      </div>
+      <a class="button" (click)="removeLanguage(i)">Remove language</a>
+    </div>
+    <a class="button" (click)="addLanguage()">Add language</a>
+  </div>
+  <label for="summary">Summary</label>
+  <textarea id="summary" formControlName="summary"></textarea>
+  <input type="submit" value="Submit">
+</form>

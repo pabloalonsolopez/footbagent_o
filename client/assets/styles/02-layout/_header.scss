@@ -1,0 +1,37 @@
+fb-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  .header {
+    border-bottom: 3px solid $brand-color;
+    padding: $spacer-xs 0;
+    background-color: $white;
+    color: $text-silenced-color;
+    a {
+      color: $text-silenced-color;
+      &:hover {
+        text-decoration: none;
+        color: $text-muted-color;
+      }
+    }
+    .icon-logo {
+      font-size: 3rem;
+      color: $brand-color;
+    }
+    .icon-search {
+      font-size: 2rem;
+    }
+    .header-nav {
+      ul {
+        display: inline-flex;
+        align-items: center;
+        li {
+          &:not(:first-child) {
+            margin-left: $spacer-md;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $grid-gutter;
+  @each $name, $width in $container-max-widths {
+  	@include media($name) {
+  	  max-width: $width;
+  	}
+  }
+}
+
+.container-slim {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 $grid-gutter;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $grid-gutter;
+}
+
+.row {
+  display: flex;
+  margin: 0 ($grid-gutter*-1/2);
+}
+
+.top { align-items: flex-start; }
+.middle { align-items: center; }
+.bottom { align-items: flex-end; }
+
+.col {
+  flex: 1;
+  padding: 0 ($grid-gutter/2);
+}
+
+.col-flex {
+  display: flex;
+}
+
+.left { justify-content: flex-start; }
+.center { justify-content: center; }
+.right { justify-content: flex-end; }

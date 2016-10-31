@@ -1,0 +1,48 @@
+/*
+* BASE
+*/
+
+//Colors palette
+$white:                              #FFFFFF;
+$gray1:                              #F7F8FB;
+$gray2:                              #E7EBF3;
+$gray3:                              #96A3B6;
+$gray4:                              #596981;
+$black:                              #474747;
+$red:                                #E74445;
+
+//Semantic colors
+$brand-color:                        $red;
+$border-color:                       $gray2;
+$background-color:                   $white;
+$background-alt-color:               $gray1;
+$text-color:                         $black;
+$text-muted-color:                   $gray4;
+$text-silenced-color:                $gray3;
+$link-color:                         $brand-color;
+
+//Typography
+$font-size-sm:                       1.3rem;
+$font-size-md:                       1.4rem;
+
+$body-line-height:                   1.5;
+$body-font-family:                   "Proxima Nova";
+$body-font-weight:                   400;
+$body-font-size:                     $font-size-md;
+
+
+/*
+* LAYOUT
+*/
+
+//Spacings
+$spacer-xs:                          10px;
+$spacer-sm:                          15px;
+$spacer-md:                          20px;
+
+//Media queries
+$breakpoints:                        (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+
+//Grid
+$container-max-widths:               (sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$grid-gutter:                        $spacer-md;

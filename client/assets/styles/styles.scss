@@ -1,9 +1,58 @@
-@import "vendors/normalize";
+@import "00-vendors/normalize";
 
-@import "tools/variables";
-@import "tools/functions";
-@import "tools/mixins";
+@import "01-base/variables";
+@import "01-base/fonts";
+@import "01-base/reset";
+@import "01-base/typography";
 
-@import "components/base";
-@import "components/fonts";
-@import "components/icons";
+@import "02-layout/media-queries";
+@import "02-layout/grid";
+@import "02-layout/app";
+@import "02-layout/header";
+@import "02-layout/main-content";
+@import "02-layout/footer";
+
+@import "03-components/icon";
+@import "03-components/avatar";
+@import "03-components/forms";
+
+@import "04-pages/login";
+@import "04-pages/signup";
+@import "04-pages/reset-password";
+@import "04-pages/reset-password-confirm";
+
+@import "05-utils/utilities";
+
+.button {
+  display: inline-block;
+  border: 1px solid #DADADA;	
+  border-radius: 2px;
+  padding: 5px 15px;
+}
+
+select:invalid { color: gray; }
+
+.table-actions {
+  border-bottom: 1px solid #EAEAEA;
+  padding: 10px 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  th, td {
+  	width: 200px;
+  	border-bottom: 1px solid #EAEAEA;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  th {
+    padding: 15px 20px 5px 20px;
+    text-align: left;
+  }
+  td {
+  	padding: 10px 20px;
+  }
+}

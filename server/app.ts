@@ -7,6 +7,9 @@ import * as mongoose from "mongoose"
 
 import { Config } from "./config"
 
+import "./models/resource"
+
+import { ResourcesRouter } from "./routes/resources"
 import { IndexRouter } from "./routes/index"
 
 mongoose.connect(Config.DATABASE_URL)
@@ -25,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.use(bodyparser.json())
 app.use(bodyparser.urlencoded({ extended: true }))
 
+app.use("/api/resources", ResourcesRouter)
 app.use('/*', IndexRouter)
 
 // development error handler

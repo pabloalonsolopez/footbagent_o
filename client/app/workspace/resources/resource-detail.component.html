@@ -1,0 +1,29 @@
+<a class="button" (click)="delete()">Delete</a>
+<div *ngIf="resource">
+  <p>{{resource.name}}</p>
+  <p>{{resource.knownAs}}</p>
+  <p>{{resource.dateOfBirth}}</p>
+  <p>{{resource.cityOfBirth}}</p>
+  <p>{{resource.stateOfBirth}}</p>
+  <p>{{resource.countryOfBirth}}</p>
+  <p>{{resource.maritalStatus}}</p>
+  <p>{{resource.children}}</p>
+  <p>{{resource.height}}</p>
+  <p>{{resource.weight}}</p>
+  <p>{{resource.preferredFoot}}</p>
+  <p>{{resource.mainPosition.name}}</p>
+  <ul *ngFor="let otherPosition of resource.otherPositions">
+    <li>{{otherPosition.name}}</li>
+  </ul>
+  <p>{{resource.phone}}</p>
+  <p>{{resource.email}}</p>
+  <p>{{resource.website}}</p>
+  <p>{{resource.twitter}}</p>
+  <p>{{resource.facebook}}</p>
+  <p>{{resource.instagram}}</p>
+  <ul *ngFor="let language of resource.languages">
+    <li>{{language.name}}</li>
+    <li>{{language.level}}</li>
+  </ul>
+  <p>{{resource.summary}}</p>
+</div>

@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
-
-import { CalendarComponent } from './calendar/calendar.component'
+import { FormsModule } from '@angular/forms'
+import { ReactiveFormsModule } from '@angular/forms'
+import { HttpModule } from '@angular/http'
 
 @NgModule({
   imports: [
-    CommonModule
-  ],
-  declarations: [
-  	CalendarComponent
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpModule
   ],
   exports: [
     CommonModule,
-  	CalendarComponent
+    FormsModule,
+    ReactiveFormsModule,
+    HttpModule
   ]
 })
 
