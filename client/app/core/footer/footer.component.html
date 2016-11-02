@@ -1,27 +1,13 @@
-<div class="footer" *ngIf="isVisible">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col">
-        <a routerLink="/home" routerLinkActive="is-active">footbagent.com</a>
-      </div>
-      <div class="col col-flex right">
-        <nav class="footer-nav">
-          <ul>
-            <li>
-              <a routerLink="/terms" routerLinkActive="is-active">Terms of use</a>
-            </li>
-            <li>
-              <a routerLink="/privacy" routerLinkActive="is-active">Privacy policy</a>
-            </li>
-            <li>
-              <a routerLink="/cookies" routerLinkActive="is-active">Cookies policy</a>
-            </li>
-            <li>
-              <p>&copy; 2016 Footbagent.com</p>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+<div class="d(flex) fwrap(wrap) bt(1) px(1rem) fs(1.3rem) c(gray3)" *ngIf="isVisible">
+  <div class="flex(12) flex(shrink)@md p(1rem) ta(center) ta(left)@md">
+    <a class="td-hover(none) c(gray3) c-hover(gray4)" routerLink="/home" routerLinkActive="is-active">footbagent.com</a>
+  </div>
+  <div class="flex(12) flex(expand)@md bt(1) bt(0)@md ta(center) ta(right)@md p(1rem)">
+    <nav class="d(inline-flex) fwrap(wrap) jc(center)">
+      <a class="td-hover(none) c(gray3) c-hover(gray4)" routerLink="/terms" routerLinkActive="is-active">Terms of service</a>
+      <a class="ml(2rem) td-hover(none) c(gray3) c-hover(gray4)" routerLink="/privacy" routerLinkActive="is-active">Privacy policy</a>
+      <a class="ml(2rem) td-hover(none) c(gray3) c-hover(gray4)" routerLink="/cookies" routerLinkActive="is-active">Cookies policy</a>
+      <p class="ml(2rem)">&copy; 2016 Footbagent.com</p>
+    </nav>
   </div>
 </div>

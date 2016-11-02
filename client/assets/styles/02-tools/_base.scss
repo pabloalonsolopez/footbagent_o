@@ -1,0 +1,34 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: $brand;
+  transition: color .15s ease-in;
+  &:hover {
+    text-decoration: underline;
+    color: $brand5;
+  }
+}
+
+h1 {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+img {
+  vertical-align: middle;
+}

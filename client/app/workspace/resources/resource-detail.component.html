@@ -1,29 +1,124 @@
-<a class="button" (click)="delete()">Delete</a>
 <div *ngIf="resource">
-  <p>{{resource.name}}</p>
-  <p>{{resource.knownAs}}</p>
-  <p>{{resource.dateOfBirth}}</p>
-  <p>{{resource.cityOfBirth}}</p>
-  <p>{{resource.stateOfBirth}}</p>
-  <p>{{resource.countryOfBirth}}</p>
-  <p>{{resource.maritalStatus}}</p>
-  <p>{{resource.children}}</p>
-  <p>{{resource.height}}</p>
-  <p>{{resource.weight}}</p>
-  <p>{{resource.preferredFoot}}</p>
-  <p>{{resource.mainPosition.name}}</p>
-  <ul *ngFor="let otherPosition of resource.otherPositions">
-    <li>{{otherPosition.name}}</li>
-  </ul>
-  <p>{{resource.phone}}</p>
-  <p>{{resource.email}}</p>
-  <p>{{resource.website}}</p>
-  <p>{{resource.twitter}}</p>
-  <p>{{resource.facebook}}</p>
-  <p>{{resource.instagram}}</p>
-  <ul *ngFor="let language of resource.languages">
-    <li>{{language.name}}</li>
-    <li>{{language.level}}</li>
-  </ul>
-  <p>{{resource.summary}}</p>
+  <div class="bb(1) py(2rem) bg(gray1)">
+    <div class="maxw(120rem) m(center) px(2rem)">
+      <h1 class="fs(1.6rem)">{{resource.knownAs}}</h1>
+      <a class="{{ 'button' | f }}" (click)="delete()">Edit</a>
+      <a class="{{ 'button' | f }}" (click)="delete()">Delete</a>
+    </div>
+  </div>
+  <div class="maxw(120rem) m(center) px(1rem)">
+    <div class="d(flex) fwrap(wrap) bb(1) py(4rem)">
+      <div class="flex(12) flex(3)@md p(1rem)">
+        <h2 class="fs(1.6rem)">Summary</h2>
+      </div>
+      <div class="flex(12) flex(9)@md p(1rem)">
+        <label class="d(inline-block) lh(1.25) fw(600) fs(1.3rem) c(gray4)">Summary</label>
+        <p>{{resource.summary}}</p>
+      </div>
+    </div>
+    <div class="d(flex) fwrap(wrap) bb(1) py(4rem)">
+      <div class="flex(12) flex(3)@md p(1rem)">
+        <h2 class="fs(1.6rem)">Personal</h2>
+      </div>
+      <div class="flex(12) flex(9)@md px(1rem)">
+        <div class="flex(expand) d(flex) fwrap(wrap) mx(-1rem)">
+          <div class="flex(12) flex(12)@md p(1rem)">
+            <label class="d(inline-block) lh(1.25) fw(600) fs(1.3rem) c(gray4)">Name</label>
+            <p>{{resource.name}}</p>
+          </div>
+          <div class="flex(12) flex(4)@md p(1rem)">
+            <label class="d(inline-block) lh(1.25) fw(600) fs(1.3rem) c(gray4)">Date of birth</label>
+            <p>{{resource.dateOfBirth}}</p>
+          </div>
+          <div class="flex(12) flex(8)@md p(1rem)">
+            <label class="d(inline-block) lh(1.25) fw(600) fs(1.3rem) c(gray4)">Place of birth</label>
+            <p>{{resource.cityOfBirth}}, {{resource.stateOfBirth}}, {{resource.countryOfBirth}}</p>
+          </div>
+          <div class="flex(12) flex(4)@md p(1rem)">
+            <label class="d(inline-block) lh(1.25) fw(600) fs(1.3rem) c(gray4)">Marital status</label>
+            <p>{{resource.maritalStatus}}</p>
+          </div>
+          <div class="flex(12) flex(4)@md p(1rem)">
+            <label class="d(inline-block) lh(1.25) fw(600) fs(1.3rem) c(gray4)">Children</label>
+            <p>{{resource.children}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d(flex) fwrap(wrap) bb(1) py(4rem)">
+      <div class="flex(12) flex(3)@md p(1rem)">
+        <h2 class="fs(1.6rem)">Physical</h2>
+      </div>
+      <div class="flex(12) flex(9)@md d(flex) fwrap(wrap) px(1rem)">
+        <div class="flex(expand) d(flex) fwrap(wrap) mx(-1rem)">
+          <div class="flex(12) flex(4)@md p(1rem)">
+            <label class="d(inline-block) lh(1.25) fw(600) fs(1.3rem) c(gray4)">Height</label>
+            <p>{{resource.height}}CM</p>
+          </div>
+          <div class="flex(12) flex(4)@md p(1rem)">
+             <label class="d(inline-block) lh(1.25) fw(600) fs(1.3rem) c(gray4)">Weight</label>
+             <p>{{resource.weight}}KG</p>
+          </div>
+          <div class="flex(12) flex(4)@md p(1rem)">
+            <label class="d(inline-block) lh(1.25) fw(600) fs(1.3rem) c(gray4)">Preferred foot</label>
+            <p>{{resource.preferredFoot}}</p>
+          </div>
+          <div class="flex(12) flex(4)@md p(1rem)">
+            <label class="d(inline-block) lh(1.25) fw(600) fs(1.3rem) c(gray4)">Main position</label>
+            <p>{{resource.mainPosition.name}}</p>
+          </div>
+          <div class="flex(12) flex(4)@md p(1rem)">
+            <label class="d(inline-block) lh(1.25) fw(600) fs(1.3rem) c(gray4)">Other positions</label>
+            <p><span *ngFor="let otherPosition of resource.otherPositions">{{otherPosition.name}}</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d(flex) fwrap(wrap) bb(1) py(4rem)">
+      <div class="flex(12) flex(3)@md p(1rem)">
+        <h2 class="fs(1.6rem)">Languages</h2>
+      </div>
+      <div class="flex(12) flex(9)@md d(flex) fwrap(wrap) px(1rem)">
+        <div class="flex(expand) d(flex) fwrap(wrap) mx(-1rem)">
+          <div class="flex(12) flex(4)@md p(1rem)" *ngFor="let language of resource.languages">
+            <label class="d(inline-block) lh(1.25) fw(600) fs(1.3rem) c(gray4)">{{language.name}}</label>
+            <p>{{language.level}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d(flex) fwrap(wrap) py(4rem)">
+      <div class="flex(12) flex(3)@md p(1rem)">
+        <h2 class="fs(1.6rem)">Contact</h2>
+      </div>
+      <div class="flex(12) flex(9)@md d(flex) fwrap(wrap) px(1rem)">
+        <div class="flex(expand) d(flex) fwrap(wrap) mx(-1rem)">
+          <div class="flex(12) flex(4)@md p(1rem)">
+            <label class="d(inline-block) lh(1.25) fw(600) fs(1.3rem) c(gray4)">Phone</label>
+            <p>{{resource.phone}}</p>
+          </div>
+          <div class="flex(12) flex(4)@md p(1rem)">
+            <label class="d(inline-block) lh(1.25) fw(600) fs(1.3rem) c(gray4)">Email</label>
+            <p>{{resource.email}}</p>
+          </div>
+          <div class="flex(12) flex(4)@md p(1rem)">
+            <label class="d(inline-block) lh(1.25) fw(600) fs(1.3rem) c(gray4)">Website</label>
+            <p>{{resource.website}}</p>
+          </div>
+          <div class="flex(12) flex(4)@md p(1rem)">
+            <label class="d(inline-block) lh(1.25) fw(600) fs(1.3rem) c(gray4)">Twitter</label>
+            <p>{{resource.twitter}}</p>
+          </div>
+          <div class="flex(12) flex(4)@md p(1rem)">
+            <label class="d(inline-block) lh(1.25) fw(600) fs(1.3rem) c(gray4)">Facebook</label>
+            <p>{{resource.facebook}}</p>
+          </div>
+          <div class="flex(12) flex(4)@md p(1rem)">
+            <label class="d(inline-block) lh(1.25) fw(600) fs(1.3rem) c(gray4)">Instagram</label>
+            <p>{{resource.instagram}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

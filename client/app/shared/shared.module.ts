@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms'
 import { ReactiveFormsModule } from '@angular/forms'
 import { HttpModule } from '@angular/http'
 
+import { FPipe } from './pipes/f.pipe'
+
 @NgModule({
   imports: [
     CommonModule,
@@ -11,11 +13,15 @@ import { HttpModule } from '@angular/http'
     ReactiveFormsModule,
     HttpModule
   ],
+  declarations: [
+    FPipe
+  ],
   exports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpModule
+    HttpModule,
+    FPipe
   ]
 })
 

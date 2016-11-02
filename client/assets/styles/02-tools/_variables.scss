@@ -1,0 +1,201 @@
+//Colors palette
+$white:                              #FFFFFF;
+$gray1:                              #F7F8FB;
+$gray2:                              #E7EBF3;
+$gray3:                              #96A3B6;
+$gray4:                              #596981;
+$black:                              #474747;
+$blue:                               #478AFF;
+$blue5:                             darken($blue, 5%);
+$red:                                #E74445;
+$brand:                              $blue;
+$brand5:                             $blue5;
+
+//Media queries
+$breakpoints:                        (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+
+//Grid
+$container-max-widths:               (sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$grid-gutter:                        2rem;
+
+$colors: (
+  white: $white,
+  gray1: $gray1,
+  gray2: $gray2,
+  gray3: $gray3,
+  gray4: $gray4,
+  black: $black,
+  blue: $blue,
+  blue5: $blue5,
+  red: $red,
+  brand: $brand,
+  brand5: $brand5
+);
+
+$flex-alignments: (
+  flex-start: flex-start,
+  center: center,
+  flex-end: flex-end
+);
+
+$borders: (
+  0: 0,
+  1: (1px solid $gray2),
+  brand: (1px solid $brand),
+  brand--lg: (3px solid $brand)
+);
+
+$border-radiuses: (
+  2px: 2px
+);
+
+$displays: (
+  inline-block: inline-block,
+  block: block,
+  flex: flex,
+  inline-flex: inline-flex
+);
+
+$flex-directions: (
+  column: column
+);
+
+$font-families: (
+  proxima: "Proxima Nova"
+);
+
+$flex-types: (
+  shrink: 0,
+  expand: 1,
+  12: (0 0 percentage(12/12)),
+  11: (0 0 percentage(11/12)),
+  10: (0 0 percentage(10/12)),
+  9: (0 0 percentage(9/12)),
+  8: (0 0 percentage(8/12)),
+  7: (0 0 percentage(7/12)),
+  6: (0 0 percentage(6/12)),
+  5: (0 0 percentage(5/12)),
+  4: (0 0 percentage(4/12)),
+  3: (0 0 percentage(3/12)),
+  2: (0 0 percentage(2/12)),
+  1: (0 0 percentage(1/12))
+);
+
+$flex-wraps: (
+  wrap: wrap
+);
+
+$font-sizes: (
+  62.5%: 62.5%,
+  1.2rem: 1.2rem,
+  1.3rem: 1.3rem,
+  1.4rem: 1.4rem,
+  1.6rem: 1.6rem,
+  2rem: 2rem,
+  2.8rem: 2.8rem,
+  3rem: 3rem,
+  7rem: 7rem
+);
+
+$font-weights: (
+  400: 400,
+  600: 600
+);
+
+$heights: (
+  100%: 100%,
+  3rem: 3rem
+);
+
+$line-heights: (
+  1.25: 1.25,
+  1.5: 1.5
+);
+
+$spacings: (
+  auto: auto,
+  center: 0 auto,
+  -1rem: -1rem,
+  0.5rem: 0.5rem,
+  1rem: 1rem,
+  1.5rem: 1.5rem,
+  2rem: 2rem,
+  3rem: 3rem,
+  4rem: 4rem
+);
+
+$text-alignments: (
+  left: left,
+  center: center,
+  right: right
+);
+
+$text-decorations: (
+  none: none
+);
+
+$transitions: (
+  all: (all .15s ease-in)
+);
+
+$max-widths: (
+  40rem: 40rem,
+  120rem: 120rem
+);
+
+$min-heights: (
+  100%: 100%
+);
+
+$outlines: (
+  0: 0
+);
+
+$widths: (
+  100%: 100%,
+  50%: 50%,
+  3rem: 3rem
+);
+
+$dictionary: (
+  (ai,                               align-items,                            $flex-alignments,                       null),
+  (b,                                border,                                 $borders,                               null),
+  (bb,                               border-bottom,                          $borders,                               null),
+  (bb-focus,                         border-bottom,                          $borders,                               ":focus"),
+  (bg,                               background-color,                       $colors,                                null),
+  (bg-hover,                         background-color,                       $colors,                                ":hover"),
+  (br,                               border-radius,                          $border-radiuses,                       null),
+  (bt,                               border-top,                             $borders,                               null),
+  (c,                                color,                                  $colors,                                null),
+  (c-hover,                          color,                                  $colors,                                ":hover"),
+  (c-placeholder,                    color,                                  $colors,                                "::placeholder"),
+  (c-focus-placeholder,              color,                                  $colors,                                ":focus::placeholder"),
+  (d,                                display,                                $displays,                              null),
+  (fd,                               flex-direction,                         $flex-directions,                       null),
+  (ff,                               font-family,                            $font-families,                         null),
+  (flex,                             flex,                                   $flex-types,                            null),
+  (fwrap,                            flex-wrap,                              $flex-wraps,                            null),
+  (fs,                               font-size,                              $font-sizes,                            null),
+  (fw,                               font-weight,                            $font-weights,                          null),
+  (h,                                height,                                 $heights,                               null),
+  (jc,                               justify-content,                        $flex-alignments,                       null),
+  (lh,                               line-height,                            $line-heights,                          null),
+  (m,                                margin,                                 $spacings,                              null),
+  (mb,                               margin-bottom,                          $spacings,                              null),
+  (ml,                               margin-left,                            $spacings,                              null),
+  (maxw,                             max-width,                              $max-widths,                            null),
+  (mt,                               margin-top,                             $spacings,                              null),
+  (minh,                             min-height,                             $min-heights,                           null),
+  (mx,                               (margin-left, margin-right),            $spacings,                              null),
+  (ou,                               outline,                                $outlines,                              null),
+  (p,                                padding,                                $spacings,                              null),
+  (pb,                               padding-bottom,                         $spacings,                              null),
+  (pt,                               padding-top,                            $spacings,                              null),
+  (px,                               (padding-left, padding-right),          $spacings,                              null),
+  (py,                               (padding-top, padding-bottom),          $spacings,                              null),
+  (t,                                transition,                             $transitions,                           null),
+  (t-placeholder,                    transition,                             $transitions,                           "::placeholder"),
+  (ta,                               text-align,                             $text-alignments,                       null),
+  (td-hover,                         text-decoration,                        $text-decorations,                      ":hover"),
+  (w,                                width,                                  $widths,                                null)
+);

@@ -1,39 +1,41 @@
-<div class="mw(5) center() p(1rem)">
-  <div class="d(flex) fw(wrap) ai(flex-start) bbw(1px) bbs(solid) bbc(gray4) py(6rem)">
-    <div class="w(100%) w(40%)@sm p(1rem)">
-      <h3 class="f(1.8rem) fw(600) lh(1.25)">Perfil</h3>
-      <h2 class="f(1.4rem) fw(400) lh(1.25) c(gray1) mt(1rem)">Tu correo electrónico es tu identidad en Footbagent y es utilizado para iniciar sesión.</h2>
+<div class="bb(1) py(2rem) bg(gray1)">
+  <div class="maxw(120rem) m(center) px(2rem)">
+    <h1 class="fs(1.6rem)">Account settings</h1>
+  </div>
+</div>
+<div class="maxw(120rem) m(center) px(1rem)">
+  <div class="d(flex) fwrap(wrap) bb(1) py(4rem)">
+    <div class="flex(12) flex(3)@md p(1rem)">
+      <h2 class="fs(1.6rem)">Profile</h2>
+      <p class="mt(0.5rem) fs(1.3rem) c(gray4)">Your email address is your identity on Footbagent and is used to log in.</p>
     </div>
-    <div class="w(100%) w(60%)@sm p(1rem)">
-      <div class="d(flex)">
-        <img class="d(block) w(10rem) h(10rem) br(100%) mb(1.4rem) mr(1.4rem)" src="assets/images/avatar-example.jpg">
-        <div class="w(100%)">
-          <input class="d(block) w(100%) bw(1px) bs(solid) bc(gray3) br(2px) px(2rem) py(1rem) ou(0) lh(1.5) mb(1.4rem) c(black) bc-focus(blue) c-placeholder(gray3) t(border-color) c-focus-placeholder(gray2) t-placeholder(color)" type="text" placeholder="Nombre de usuario"/>
-          <input class="d(block) w(100%) bw(1px) bs(solid) bc(gray3) br(2px) px(2rem) py(1rem) ou(0) lh(1.5) mb(1.4rem) c(black) bc-focus(blue) c-placeholder(gray3) t(border-color) c-focus-placeholder(gray2) t-placeholder(color)" type="email" placeholder="Correo electrónico"/>
-          <input class="d(block) bw(1px) bs(solid) bc(blue) bg(blue) c(white) bc-hover(blue-95) bg-hover(blue-95) br(2px) px(2rem) py(1rem) f(1.2rem) fw(600) ou(0) lh(1.5) t(all) cu(pointer)" type="submit" value="Guardar cambios"/>
-        </div>
-      </div>
+    <div class="flex(12) flex(9)@md p(1rem)">
+      <label class="d(inline-block) lh(1.25) fw(600) fs(1.3rem) c(gray4)">Email</label>
+      <input class="{{ 'form-control' | f }}" type="email" placeholder="Email"/>
+      <label class="d(inline-block) lh(1.25) fw(600) fs(1.3rem) c(gray4) mt(3rem)">Username</label>
+      <input class="{{ 'form-control' | f }}" type="text" placeholder="Username"/>
+      <input class="{{ 'button' | f }} mt(3rem)" type="submit" value="Save changes"/>
     </div>
   </div>
-  <div class="d(flex) fw(wrap) ai(flex-start) mt(6rem) bbw(1px) bbs(solid) bbc(gray4) pb(6rem)">
-    <div class="w(100%) w(40%)@sm p(1rem)">
-      <h3 class="f(1.8rem) fw(600) lh(1.25)">Contraseña</h3>
-      <h2 class="f(1.4rem) fw(400) lh(1.25) c(gray1) mt(1rem)">Es recomendable por motivos de seguridad cambiar la contraseña cada cierto tiempo.</h2>
+  <div class="d(flex) fwrap(wrap) bb(1) py(4rem)">
+    <div class="flex(12) flex(3)@md p(1rem)">
+      <h2 class="fs(1.6rem)">Password</h2>
+      <p class="mt(0.5rem) fs(1.3rem) c(gray4)">It is recommended due to security reasons to change your password regularly.</p>
     </div>
-    <div class="w(100%) w(60%)@sm p(1rem)">
-      <input class="d(block) w(100%) bw(1px) bs(solid) bc(gray3) br(2px) px(2rem) py(1rem) ou(0) lh(1.5) mb(1.4rem) c(black) bc-focus(blue) c-placeholder(gray3) t(border-color) c-focus-placeholder(gray2) t-placeholder(color)" type="password" placeholder="Contraseña actual"/>
-      <input class="d(block) w(100%) bw(1px) bs(solid) bc(gray3) br(2px) px(2rem) py(1rem) ou(0) lh(1.5) mb(1.4rem) c(black) bc-focus(blue) c-placeholder(gray3) t(border-color) c-focus-placeholder(gray2) t-placeholder(color)" type="password" placeholder="Nueva contraseña"/>
-      <input class="d(block) w(100%) bw(1px) bs(solid) bc(gray3) br(2px) px(2rem) py(1rem) ou(0) lh(1.5) mb(1.4rem) c(black) bc-focus(blue) c-placeholder(gray3) t(border-color) c-focus-placeholder(gray2) t-placeholder(color)" type="password" placeholder="Confirma la nueva contraseña"/>
-      <input class="d(block) bw(1px) bs(solid) bc(blue) bg(blue) c(white) bc-hover(blue-95) bg-hover(blue-95) br(2px) px(2rem) py(1rem) f(1.2rem) fw(600) ou(0) lh(1.5) t(all) cu(pointer)" type="submit" value="Cambiar contraseña"/>
+    <div class="flex(12) flex(9)@md p(1rem)">
+      <input class="{{ 'form-control' | f }}" type="password" placeholder="Current password"/>
+      <input class="{{ 'form-control' | f }} mt(2rem)" type="password" placeholder="New password"/>
+      <input class="{{ 'form-control' | f }} mt(2rem)" type="password" placeholder="Confirm new password"/>
+      <input class="{{ 'button' | f }} mt(3rem)" type="submit" value="Update password"/>
     </div>
   </div>
-  <div class="d(flex) fw(wrap) ai(center) pt(6rem) pb(5rem)">
-    <div class="w(100%) w(40%)@sm p(1rem)">
-      <h3 class="f(1.8rem) fw(600) lh(1.25) c(red)">Desactivar cuenta</h3>
-      <h2 class="f(1.4rem) fw(400) lh(1.25) c(gray1) mt(1rem)">La desactivación de cuenta es irreversible.</h2>
+  <div class="d(flex) fwrap(wrap) ai(center) py(4rem)">
+    <div class="flex(12) flex(3)@md p(1rem)">
+      <h2 class="fs(1.6rem) c(red)">Close Account</h2>
+      <p class="mt(0.5rem) fs(1.3rem) c(gray4)"><span class="fw(600)">Warning:</span> Closing your account is irreversible.</p>
     </div>
-    <div class="w(100%) w(60%)@sm p(1rem)">
-      <button class="d(block) bw(1px) bs(solid) bc(red) bg(red) c(white) bc-hover(red-95) bg-hover(red-95) br(2px) px(2rem) py(1rem) f(1.2rem) fw(600) ou(0) lh(1.5) t(all) cu(pointer)">Desactivar cuenta</button>
+    <div class="flex(12) flex(9)@md p(1rem)">
+      <input class="{{ 'button' | f }}" type="submit" value="Close this account..."/>
     </div>
   </div>
 </div>

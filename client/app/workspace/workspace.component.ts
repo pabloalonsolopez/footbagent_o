@@ -5,7 +5,7 @@ import { Component } from '@angular/core'
   selector: 'fb-workspace',
   templateUrl: 'workspace.component.html',
   host: {
-  	class: 'flex(1) d(flex) fd(column)'
+  	class: 'flex(expand) d(flex) fd(column)'
   }
 })
 

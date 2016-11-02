@@ -7,7 +7,10 @@ import { ResourceService } from './resource.service'
 @Component({
   moduleId: module.id,
   selector: 'st-resource-detail',
-  templateUrl: 'resource-detail.component.html'
+  templateUrl: 'resource-detail.component.html',
+  host: {
+    class: 'w(100%)'
+  }
 })
 
 export class ResourceDetailComponent implements OnInit {

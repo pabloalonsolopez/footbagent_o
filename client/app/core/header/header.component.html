@@ -1,27 +1,9 @@
-<div class="header" *ngIf="isVisible">
-  <div class="container-fluid">
-    <div class="row middle">
-      <div class="col">
-        <a class="icon icon-logo" routerLink=""></a>
-      </div>
-      <div class="col col-flex right">
-        <nav class="header-nav">
-          <ul>
-            <li>
-              <a routerLink="/login">Login</a>
-            </li>
-            <li>
-              <a routerLink="/signup">Signup</a>
-            </li>
-            <li>
-              <a class="icon icon-search" routerLink="/workspace"></a>
-            </li>
-            <li>
-              <img class="avatar" src="assets/images/avatar-example.jpg">
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
+<div class="d(flex) bb(brand--lg) px(2rem) py(1rem)" *ngIf="isVisible">
+  <a class="td-hover(none) fs(3rem) icon-logo" routerLink=""></a>
+  <nav class="d(flex) ai(center) ml(auto)">
+    <a class="td-hover(none) c(gray3) c-hover(gray4)" routerLink="/login">Login</a>
+    <a class="td-hover(none) ml(2rem) c(gray3) c-hover(gray4)" routerLink="/signup">Signup</a>
+    <a class="td-hover(none) ml(2rem) fs(2rem) c(gray3) c-hover(gray4) icon-search"></a>
+    <img class="w(3rem) h(3rem) ml(2rem) br(2px)" src="assets/images/avatar-example.jpg">
+  </nav>
 </div>
