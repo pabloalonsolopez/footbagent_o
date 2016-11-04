@@ -32,3 +32,20 @@ h1, h2, h3, h4, h5, h6 {
 img {
   vertical-align: middle;
 }
+
+select {
+  appearance: none;
+  &:invalid {
+    color: $gray4;
+  }
+  option {
+    color: $black;
+  }
+}
+
+textarea {
+  resize: vertical;
+  min-height: 9rem;
+  height: 9rem;
+  max-height: 18rem;
+}

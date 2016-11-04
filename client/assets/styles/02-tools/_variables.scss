@@ -2,8 +2,9 @@
 $white:                              #FFFFFF;
 $gray1:                              #F7F8FB;
 $gray2:                              #E7EBF3;
-$gray3:                              #96A3B6;
-$gray4:                              #596981;
+$gray3:                              #CFD7E6;
+$gray4:                              #96A3B6;
+$gray5:                              #596981;
 $black:                              #474747;
 $blue:                               #478AFF;
 $blue5:                             darken($blue, 5%);
@@ -24,6 +25,7 @@ $colors: (
   gray2: $gray2,
   gray3: $gray3,
   gray4: $gray4,
+  gray5: $gray5,
   black: $black,
   blue: $blue,
   blue5: $blue5,
@@ -41,6 +43,7 @@ $flex-alignments: (
 $borders: (
   0: 0,
   1: (1px solid $gray2),
+  2: (1px solid $gray3),
   brand: (1px solid $brand),
   brand--lg: (3px solid $brand)
 );
@@ -61,6 +64,8 @@ $flex-directions: (
 );
 
 $font-families: (
+  inherit: inherit,
+  opensans: "Open Sans",
   proxima: "Proxima Nova"
 );
 
@@ -91,6 +96,7 @@ $font-sizes: (
   1.3rem: 1.3rem,
   1.4rem: 1.4rem,
   1.6rem: 1.6rem,
+  1.8rem: 1.8rem,
   2rem: 2rem,
   2.8rem: 2.8rem,
   3rem: 3rem,
@@ -108,8 +114,13 @@ $heights: (
 );
 
 $line-heights: (
+  1: 1,
   1.25: 1.25,
   1.5: 1.5
+);
+
+$positions: (
+  relative: relative
 );
 
 $spacings: (
@@ -121,7 +132,8 @@ $spacings: (
   1.5rem: 1.5rem,
   2rem: 2rem,
   3rem: 3rem,
-  4rem: 4rem
+  4rem: 4rem,
+  4: percentage(4/12)
 );
 
 $text-alignments: (
@@ -140,6 +152,7 @@ $transitions: (
 
 $max-widths: (
   40rem: 40rem,
+  60rem: 60rem,
   120rem: 120rem
 );
 
@@ -160,6 +173,7 @@ $widths: (
 $dictionary: (
   (ai,                               align-items,                            $flex-alignments,                       null),
   (b,                                border,                                 $borders,                               null),
+  (b-focus,                          border,                                 $borders,                               ":focus"),
   (bb,                               border-bottom,                          $borders,                               null),
   (bb-focus,                         border-bottom,                          $borders,                               ":focus"),
   (bg,                               background-color,                       $colors,                                null),
@@ -184,12 +198,14 @@ $dictionary: (
   (mb,                               margin-bottom,                          $spacings,                              null),
   (ml,                               margin-left,                            $spacings,                              null),
   (maxw,                             max-width,                              $max-widths,                            null),
+  (mr,                               margin-right,                           $spacings,                              null),
   (mt,                               margin-top,                             $spacings,                              null),
   (minh,                             min-height,                             $min-heights,                           null),
   (mx,                               (margin-left, margin-right),            $spacings,                              null),
   (ou,                               outline,                                $outlines,                              null),
   (p,                                padding,                                $spacings,                              null),
   (pb,                               padding-bottom,                         $spacings,                              null),
+  (pos,                              position,                               $positions,                             null),
   (pt,                               padding-top,                            $spacings,                              null),
   (px,                               (padding-left, padding-right),          $spacings,                              null),
   (py,                               (padding-top, padding-bottom),          $spacings,                              null),

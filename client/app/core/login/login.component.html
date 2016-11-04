@@ -1,11 +1,11 @@
-<div class="ta(center)">
-  <i class="d(block) mb(4rem) fs(7rem) c(brand) icon-logo"></i>
-  <h1 class="mt(4rem) fw(600) lh(1.25) fs(2.8rem)">Login</h1>
-  <h2 class="mt(1rem) fs(1.6rem) c(gray4)">Welcome to Footbagent again.</h2>
-</div>
+<i class="d(block) mb(4rem) fs(7rem) c(brand) icon-logo"></i>
+<h1 class="mt(4rem) lh(1.25) fs(2.8rem)">Sign in to Footbagent.</h1>
+<h2 class="mt(1rem) fs(1.6rem) c(gray5)">Enter your details below.</h2>
 <form class="mt(4rem)">
-  <input class="{{ 'form-control' | f }}" type="email" placeholder="Email"/>
-  <input class="{{ 'form-control' | f }} mt(2rem)" type="password" placeholder="Password"/>
+  <label class="{{ 'label' | f }}" for="email">Email address</label>
+  <input class="{{ 'form-control' | f }}" type="email" id="email" placeholder="paul@example.com"/>
+  <label class="{{ 'label' | f }} mt(2rem)" for="email">Password</label>
+  <input class="{{ 'form-control' | f }}" type="password" id="password" placeholder="Enter your password"/>
   <a class="d(inline-block) mt(2rem)" routerLink="/reset-password">Forgot password?</a>
   <input class="{{ 'button' | f }} w(100%) mt(2rem)" type="submit" value="Log in"/>
 </form>
