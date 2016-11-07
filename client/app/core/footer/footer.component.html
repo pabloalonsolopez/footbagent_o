@@ -1,13 +1,16 @@
-<div class="d(flex) fwrap(wrap) bt(1) px(1rem) fs(1.3rem) c(gray4)" *ngIf="isVisible">
-  <div class="flex(12) flex(shrink)@md p(1rem) ta(center) ta(left)@md">
-    <a class="td-hover(none) c(gray4) c-hover(gray5)" routerLink="/home" routerLinkActive="is-active">footbagent.com</a>
-  </div>
-  <div class="flex(12) flex(expand)@md bt(1) bt(0)@md ta(center) ta(right)@md p(1rem)">
-    <nav class="d(inline-flex) fwrap(wrap) jc(center)">
-      <a class="td-hover(none) c(gray4) c-hover(gray5)" routerLink="/terms" routerLinkActive="is-active">Terms of service</a>
-      <a class="ml(2rem) td-hover(none) c(gray4) c-hover(gray5)" routerLink="/privacy" routerLinkActive="is-active">Privacy policy</a>
-      <a class="ml(2rem) td-hover(none) c(gray4) c-hover(gray5)" routerLink="/cookies" routerLinkActive="is-active">Cookies policy</a>
-      <p class="ml(2rem)">&copy; 2016 Footbagent.com</p>
+<div class="bt(1) bc(gray4) py(20px) bg(white)" *ngIf="isVisible">
+  <div class="d(flex) ai(center) w(100%) maxw(xl) m(0-auto) px(20px)">
+    <div class="d(flex) ai(center)">
+      <a class="icon-logo mr(20px) bri(1) bc(gray4) pr(20px) td-hover(none) f(2.8rem) c(gray1) c-hover(red)" routerLink=""></a>
+      <a class="icon-twitter td-hover(none) f(2rem) c(gray1) c-hover(red)" href="https://www.twitter.com/footbagent" target="_blank"></a>
+      <a class="icon-facebook ml(20px) td-hover(none) f(2rem) c(gray1) c-hover(red)" href="https://www.facebook.com/footbagent" target="_blank"></a>
+      <a class="icon-instagram ml(20px) td-hover(none) f(2rem) c(gray1) c-hover(red)" href="https://www.instagram.com/footbagent" target="_blank"></a>
+    </div>
+    <nav class="d(flex) ml(auto) f(1.3rem)">
+      <a class="c(gray2) td-hover(none) c-hover(gray0)" routerLink="/terms" routerLinkActive="is-active">Terms of service</a>
+      <a class="ml(20px) td-hover(none) c(gray2) c-hover(gray0)" routerLink="/privacy" routerLinkActive="is-active">Privacy policy</a>
+      <a class="ml(20px) td-hover(none) c(gray2) c-hover(gray0)" routerLink="/cookies" routerLinkActive="is-active">Cookies policy</a>
+      <p  class="ml(20px)">&copy; Footbagent 2016</p>
     </nav>
   </div>
 </div>

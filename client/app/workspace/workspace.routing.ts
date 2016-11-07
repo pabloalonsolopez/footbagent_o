@@ -2,7 +2,10 @@ import { ModuleWithProviders } from '@angular/core'
 import { Routes, RouterModule } from '@angular/router'
 
 import { WorkspaceComponent } from './workspace.component'
-import { SettingsComponent } from './settings/settings.component'
+import { ProfileComponent } from './profile/profile.component'
+import { ProfileDetailComponent } from './profile/profile-detail.component'
+import { ProfilePasswordComponent } from './profile/profile-password.component'
+import { ProfileDeactivationComponent } from './profile/profile-deactivation.component'
 import { AgendaComponent } from './agenda/agenda.component'
 import { ResourcesListComponent } from './resources/resources-list.component'
 import { ResourceNewComponent } from './resources/resource-new.component'
@@ -11,7 +14,7 @@ import { ResourceDetailComponent } from './resources/resource-detail.component'
 const routes: Routes = [
   {
     path: 'workspace',
-    redirectTo: 'workspace/agenda',
+    redirectTo: 'workspace/resources',
     pathMatch: 'full',
   },
   {
@@ -19,12 +22,27 @@ const routes: Routes = [
     component: WorkspaceComponent,
     children: [
       {
-        path: 'settings',
-        component: SettingsComponent
+        path: 'profile',
+        redirectTo: 'profile/detail',
+        pathMatch: 'full',
       },
       {
-        path: 'agenda',
-        component: AgendaComponent
+        path: 'profile',
+        component: ProfileComponent,
+        children: [
+          {
+            path: 'detail',
+            component: ProfileDetailComponent
+          },
+          {
+            path: 'password',
+            component: ProfilePasswordComponent
+          },
+          {
+            path: 'deactivation',
+            component: ProfileDeactivationComponent
+          }
+        ]
       },
       {
         path: 'resources',

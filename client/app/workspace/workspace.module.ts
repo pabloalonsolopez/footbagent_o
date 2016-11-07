@@ -5,7 +5,10 @@ import { SharedModule } from '../shared/shared.module'
 import { RoutingModule } from './workspace.routing'
 
 import { WorkspaceComponent } from './workspace.component'
-import { SettingsComponent } from './settings/settings.component'
+import { ProfileComponent } from './profile/profile.component'
+import { ProfileDetailComponent } from './profile/profile-detail.component'
+import { ProfilePasswordComponent } from './profile/profile-password.component'
+import { ProfileDeactivationComponent } from './profile/profile-deactivation.component'
 import { AgendaComponent } from './agenda/agenda.component'
 import { ResourcesListComponent } from './resources/resources-list.component'
 import { ResourceNewComponent } from './resources/resource-new.component'
@@ -20,7 +23,10 @@ import { ResourceService } from './resources/resource.service'
   ],
   declarations: [
     WorkspaceComponent,
-    SettingsComponent,
+    ProfileComponent,
+    ProfileDetailComponent,
+    ProfilePasswordComponent,
+    ProfileDeactivationComponent,
     AgendaComponent,
     ResourcesListComponent,
     ResourceNewComponent,

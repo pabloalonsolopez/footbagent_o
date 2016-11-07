@@ -4,10 +4,7 @@ import { Router, Event, NavigationEnd } from '@angular/router'
 @Component({
   moduleId: module.id,
   selector: 'fb-footer',
-  templateUrl: 'footer.component.html',
-  host: {
-    class: 'flex(shrink)'
-  }
+  templateUrl: 'footer.component.html'
 })
 
 export class FooterComponent {

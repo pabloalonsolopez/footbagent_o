@@ -1,31 +1,33 @@
 <div class="d(flex) ai(center) pos(absolute) top(0) right(0) left(0) p(40px)">
- <a class="icon-logo td-hover(none) f(4rem) c(white) o(0.9)"></a>
+ <a class="icon-logo td-hover(none) f(4rem) c(gray0) c(white)@lg o(0.9)@lg" routerLink=""></a>
  <div class="d(flex) ai(center) ml(auto)">
-   <p class="c(gray3)">Don't have an account?</p>
-   <a class="ml(20px) b(1) bc(gray1) bc-hover(red) br(18px) px(30px) py(12px) bg(transparent) bg-hover(red) tt(uppercase) lh(1) fw(600) f(1rem) ls(0.1rem) c(gray3) c-hover(white) td-hover(none) bs-hover(1) t(all)" routerLink="/signup">Get Started</a>
+   <p class="f(1.3rem)">Don't have an account?</p>
+   <a class="ml(15px) {{'button' | f}}" routerLink="/signup">Sign up</a>
 </div>
 </div>
 <div class="d(flex) h(100vh)">
-  <div class="d(flex) flex(0-0-460px) p(40px)" style="background: linear-gradient(rgba(31, 37, 50, 0.95), rgba(31, 37, 50, 0.95)), url('assets/images/welcome-bg.jpg') no-repeat center; background-size: cover;">
+  <div class="d(none) d(flex)@lg flex(0-0-460px)@md p(40px)" style="background: linear-gradient(rgba(31, 37, 50, 0.8), rgba(31, 37, 50, 0.8)), url('assets/images/welcome-bg.jpg') no-repeat center; background-size: cover;">
     <div class="m(auto) ta(center) c(white)">
-      <p class="tt(uppercase) fw(600) f(1.3rem) ls(0.1rem) o(0.9)">Footbagent Enterprise Edition</p>
-      <p class="mt(15px) tt(uppercase) fw(600) f(2rem) ls(0.2rem) o(0.9)">The design collaboration cloud for larger teams</p>
-      <p class="mt(30px) f(1.6rem) fs(italic) o(0.7)">Unlimited team members. Unlimited projects. Unlimited creativity.</p>
+      <p class="tt(uppercase) fw(600) f(1.1rem) ls(0.2rem) o(0.9)">Footbagent</p>
+      <p class="mt(15px) tt(uppercase) fw(600) f(2rem) ls(0.2rem) o(0.9)">The definitive tool for football managers</p>
+      <p class="mt(30px) f(1.5rem) fs(italic) o(0.7)">Unlimited resources. Unlimited control.</p>
     </div>
   </div>
-  <div class="d(flex) flex(1) p(40px)">
-    <div class="m(auto)">
-      <h1 class="f(2.8rem) c(black)">Sign in to Footbagent.</h1>
-      <h2 class="mt(5px) f(1.6rem) c(gray3)">Enter your details below.</h2>
-      <form class="mt(40px)">
-        <label class="d(block) mb(5px) tt(uppercase) fw(600) f(1.1rem) c(black) ls(0.1rem)" for="email">Email address</label>
-        <input class="w(100%) b(1) br(2px)" type="email" id="email" placeholder="paul@example.com"/>
-        <label class="mt(20px) mb(5px) d(block) tt(uppercase) fw(600) f(1.1rem) c(black) ls(0.1rem)" for="password">Password</label>
-        <input class="w(100%) b(1) br(2px)" type="password" id="password" placeholder="Enter your password"/>
-        <div class="mt(20px)">
-          <a routerLink="/reset-password">Forgot password?</a>
+  <div class="d(flex) flex(1) bg(white)">
+    <div class="w(100%) maxw(620px) m(auto) p(40px)">
+      <h1 class="f(2.8rem) c(gray0)">Sign in to Footbagent.</h1>
+      <h2 class="mt(5px) f(1.6rem) c(gray1)">Enter your details below.</h2>
+      <form class="mt(45px)">
+        <label class="{{'label' | f}}" for="email">Email address</label>
+        <input class="{{'form-control' | f}}" type="email" id="email" placeholder="Enter your email"/>
+        <div class="d(flex) ai(center) mt(20px)">
+          <label class="{{'label' | f}}" for="password">Password</label>
+          <a class="ml(auto) mb(7px) f(1.2rem) c(gray2) c-hover(gray0)" routerLink="/reset-password">Forgot password?</a>
         </div>
-        <input class="mt(40px) d(block) b(1) bc(red) br(18px) px(30px) py(12px) bg(red) tt(uppercase) lh(1) fw(600) f(1rem) ls(0.1rem) c(white) td-hover(none) bs-hover(1) t(all)" type="submit" value="Sign in"/>
+        <input class="{{'form-control' | f}}" type="password" id="password" placeholder="Enter your password"/>
+        <div class="ta(center)">
+          <input class="{{'button--primary' | f}} mt(40px)" type="submit" value="Sign in"/>
+        </div>
       </form>
     </div>
   </div>

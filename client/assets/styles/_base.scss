@@ -13,11 +13,12 @@ html {
 }
 
 body {
+  background-color: $gray5;
   line-height: 1.5;
-  font-family: "Proxima Nova";
+  font-family: "Open Sans";
   font-weight: 400;
   font-size: 1.4rem;
-  color: $gray2;
+  color: $gray1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -1,0 +1,25 @@
+<div class="w(100%) maxw(620px) m(0-auto) px(20px) py(90px)">
+  <div class="maxw(50%) m(0-auto) bb(1) bc(gray4) mb(30px) pb(30px) ta(center)">
+    <div class="d(inline-flex) ai(center) jc(center) w(90px) h(90px) br(100%) bg(gray3) fw(600) f(2.8rem)">PA</div>
+    <div><button class="{{ 'button' | f }} mt(20px)">Update Avatar</button></div>
+  </div>
+  <label class="{{ 'label' | f }}" for="name">Name</label>
+  <input class="{{ 'form-control' | f }}" type="text" id="name" placeholder="Enter name"/>
+  <label class="{{ 'label' | f }} mt(20px)" for="email">Email</label>
+  <input class="{{ 'form-control' | f }}" type="email" id="email" placeholder="Enter email"/>
+  <label class="{{ 'label' | f }} mt(20px)" for="city">City</label>
+  <input class="{{ 'form-control' | f }}" type="text" id="city" placeholder="Enter city"/>
+  <div class="d(flex) fwrap(wrap) mx(-10px) py(10px)">
+    <div class="w(100%) w(50%)@sm p(10px)">
+      <label class="{{ 'label' | f }}" for="state">State</label>
+      <input class="{{ 'form-control' | f }}" type="text" id="state" placeholder="Enter state"/>
+    </div>
+    <div class="w(100%) w(50%)@sm p(10px)">
+      <label class="{{ 'label' | f }}" for="country">Country</label>
+      <input class="{{ 'form-control' | f }}" type="text" id="country" placeholder="Enter country"/>
+    </div>
+  </div>
+  <div class="ta(center)">
+    <input class="{{ 'button--primary' | f }} mt(20px)" type="submit" value="Update profile"/>
+   </div>
+</div>

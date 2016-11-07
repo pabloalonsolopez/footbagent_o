@@ -1,19 +1,9 @@
-<div class="bg(darkblue1)" *ngIf="isVisible">
-  <div class="d(flex) w(100%) maxw(120rem) m(center) p(2rem) fs(1.3rem)">
-    <a class="icon-logo mr(2rem) br(3) pr(2rem) fs(1.8rem) c(darkblue2) c-hover(darkblue3) td-hover(none)" routerLink=""></a>
-    <nav class="d(flex)">
-      <a class="c(darkblue2) c-hover(darkblue3) c-active(darkblue3) td-hover(none)" routerLink="/workspace/agenda" routerLinkActive="is-active">Agenda</a>
-      <a class="ml(4rem) c(darkblue2) c-hover(darkblue3) c-active(darkblue3) td-hover(none)" routerLink="/workspace/resources" routerLinkActive="is-active">Resources</a>
-    </nav>
+<div class="bb(1) bc(gray4) py(20px) bg(white)" *ngIf="isVisible">
+  <div class="d(flex) ai(center) w(100%) maxw(xl) m(0-auto) px(20px)">
+    <a class="icon-logo td-hover(none) f(4rem) c(gray0)" routerLink=""></a>
     <nav class="d(flex) ml(auto)">
-      <div class="dropdown" dropdown>
-        <a class="c(darkblue2) c-hover(darkblue3) c-active(darkblue3) td-hover(none)" dropdown-open>Pablo Alonso López</a>
-        <div class="dropdown-menu">
-          <p>Pablo Alonso López</p>
-          <p>pabloalonsolopez@gmail.com</p>
-          <a class="{{'button' | f}}">View Profile</a>
-        </div>
-      </div>
+      <a class="{{'button' | f}}" routerLink="/login">Login</a>
+      <a class="{{'button--primary' | f}} ml(20px)" routerLink="/signup">Sign up</a>
     </nav>
   </div>
 </div>
