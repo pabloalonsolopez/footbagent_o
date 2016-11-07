@@ -1,0 +1,20 @@
+.login {
+  display: flex;
+  height: 100vh;
+}
+
+.login-message {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 460px;
+  background: linear-gradient(rgba(31, 37, 50, 0.8), rgba(31, 37, 50, 0.8)), url("../images/pre-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.login-content {
+  flex: 1 1 auto;
+}
+
+.login-form {
+  margin: auto 0;
+}

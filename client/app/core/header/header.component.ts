@@ -4,10 +4,7 @@ import { Router, Event, NavigationEnd } from '@angular/router'
 @Component({
   moduleId: module.id,
   selector: 'fb-header',
-  templateUrl: 'header.component.html',
-  host: {
-    class: 'flex(shrink)'
-  }
+  templateUrl: 'header.component.html'
 })
 
 export class HeaderComponent {

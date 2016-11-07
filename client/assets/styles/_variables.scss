@@ -1,0 +1,186 @@
+$breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+
+$white:       #FFFFFF;
+$gray1:       #C6CCD7;
+$gray2:       #747C83;
+$gray3:       #596377;
+$black:       #434C5F;
+$red:         #FF3366;
+
+$colors: (
+  transparent: transparent,
+  white: $white,
+  gray1: $gray1,
+  gray2: $gray2,
+  gray3: $gray3,
+  black: $black,
+  red: $red
+);
+
+$borders: (
+  1: 1px solid
+);
+
+$border-radiuses: (
+  18px: 18px
+);
+
+$box-shadows: (
+  1: (0 3px 12px 0 rgba(0, 0, 0, .25))
+);
+
+$coordinates: (
+  0: 0
+);
+
+$displays: (
+  block: block,
+  inline-block: inline-block,
+  flex: flex,
+  inline-flex: inline-flex
+);
+
+$flex-alignments: (
+  flex-start: flex-start,
+  center: center,
+  flex-end: flex-end
+);
+
+$flex-types: (
+  0: 0,
+  1: 1,
+  "0-0-460px": (0 0 460px)
+);
+
+$font-sizes: (
+  1rem: 1rem,
+  1.1rem: 1.1rem,
+  1.2rem: 1.2rem,
+  1.3rem: 1.3rem,
+  1.4rem: 1.4rem,
+  1.6rem: 1.6rem,
+  2rem: 2rem,
+  2.8rem: 2.8rem,
+  4rem: 4rem
+);
+
+$font-styles: (
+  normal: normal,
+  italic: italic
+);
+
+$font-weights: (
+  300: 300,
+  400: 400,
+  600: 600
+);
+
+$heights: (
+  100vh: 100vh
+);
+
+$letter-spacings: (
+  0.1rem: 0.1rem,
+  0.2rem: 0.2rem
+);
+
+$line-heights: (
+  1: 1,
+  1.25: 1.25,
+  1.5: 1.5
+);
+
+$opacities: (
+  0.9: 0.9,
+  0.7: 0.7
+);
+
+$positions: (
+  relative: relative,
+  absolute: absolute
+);
+
+$spacings: (
+  auto: auto,
+  5px: 5px,
+  10px: 10px,
+  12px: 12px,
+  15px: 15px,
+  20px: 20px,
+  25px: 25px,
+  30px: 30px,
+  35px: 35px,
+  40px: 40px,
+  45px: 45px,
+  50px: 50px
+);
+
+$text-alignments: (
+  left: left,
+  center: center,
+  right: right
+);
+
+$text-decorations: (
+  none: none
+);
+
+$text-transformations: (
+  uppercase: uppercase
+);
+
+$transitions: (
+  all: (all .15s ease-in)
+);
+
+$widths: (
+  400px: 400px
+);
+
+$dictionary: (
+  (ai,        align-items,                    $flex-alignments,       null,      (xs, sm, md, lg, xl)),
+  (b,         border,                         $borders,               null,      (xs, sm, md, lg, xl)),
+  (bc,        border-color,                   $colors,                null,      (xs, sm, md, lg, xl)),
+  (bc-hover,  border-color,                   $colors,                ":hover",  (xs, sm, md, lg, xl)),
+  (bs,        box-shadow,                     $box-shadows,           null,      (xs, sm, md, lg, xl)),
+  (bs-hover,  box-shadow,                     $box-shadows,           ":hover",  (xs, sm, md, lg, xl)),
+  (bg,        background-color,               $colors,                null,      (xs, sm, md, lg, xl)),
+  (bg-hover,  background-color,               $colors,                ":hover",  (xs, sm, md, lg, xl)),
+  (br,        border-radius,                  $border-radiuses,       null,      (xs, sm, md, lg, xl)),
+  (bottom,    bottom,                         $coordinates,           null,      (xs, sm, md, lg, xl)),
+  (c,         color,                          $colors,                null,      (xs, sm, md, lg, xl)),
+  (c-hover,   color,                          $colors,                ":hover",  (xs, sm, md, lg, xl)),
+  (d,         display,                        $displays,              null,      (xs, sm, md, lg, xl)),
+  (flex,      flex,                           $flex-types,            null,      (xs, sm, md, lg, xl)),
+  (f,         font-size,                      $font-sizes,            null,      (xs, sm, md, lg, xl)),
+  (fs,        font-style,                     $font-styles,           null,      (xs, sm, md, lg, xl)),
+  (fw,        font-weight,                    $font-weights,          null,      (xs, sm, md, lg, xl)),
+  (h,         height,                         $heights,               null,      (xs, sm, md, lg, xl)),
+  (left,      left,                           $coordinates,           null,      (xs, sm, md, lg, xl)),
+  (ls,        letter-spacing,                 $letter-spacings,       null,      (xs, sm, md, lg, xl)),
+  (lh,        line-height,                    $line-heights,          null,      (xs, sm, md, lg, xl)),
+  (m,         margin,                         $spacings,              null,      (xs, sm, md, lg, xl)),
+  (mb,        margin-bottom,                  $spacings,              null,      (xs, sm, md, lg, xl)),
+  (ml,        margin-left,                    $spacings,              null,      (xs, sm, md, lg, xl)),
+  (mr,        margin-right,                   $spacings,              null,      (xs, sm, md, lg, xl)),
+  (mt,        margin-top,                     $spacings,              null,      (xs, sm, md, lg, xl)),
+  (mx,        (margin-left, margin-right),    $spacings,              null,      (xs, sm, md, lg, xl)),
+  (my,        (margin-top, margin-bottom),    $spacings,              null,      (xs, sm, md, lg, xl)),
+  (o,         opacity,                        $opacities,             null,      (xs, sm, md, lg, xl)),
+  (p,         padding,                        $spacings,              null,      (xs, sm, md, lg, xl)),
+  (pos,       position,                       $positions,             null,      (xs, sm, md, lg, xl)),
+  (pb,        padding-bottom,                 $spacings,              null,      (xs, sm, md, lg, xl)),
+  (pl,        padding-left,                   $spacings,              null,      (xs, sm, md, lg, xl)),
+  (pr,        padding-right,                  $spacings,              null,      (xs, sm, md, lg, xl)),
+  (pt,        padding-top,                    $spacings,              null,      (xs, sm, md, lg, xl)),
+  (px,        (padding-left, padding-right),  $spacings,              null,      (xs, sm, md, lg, xl)),
+  (py,        (padding-top, padding-bottom),  $spacings,              null,      (xs, sm, md, lg, xl)),
+  (right,     right,                          $coordinates,           null,      (xs, sm, md, lg, xl)),
+  (top,       top,                            $coordinates,           null,      (xs, sm, md, lg, xl)),
+  (t,         transition,                     $transitions,           null,      (xs, sm, md, lg, xl)),
+  (ta,        text-align,                     $text-alignments,       null,      (xs, sm, md, lg, xl)),
+  (td,        text-decoration,                $text-decorations,      null,      (xs, sm, md, lg, xl)),
+  (td-hover,  text-decoration,                $text-decorations,      ":hover",  (xs, sm, md, lg, xl)),
+  (tt,        text-transform,                 $text-transformations,  null,      (xs, sm, md, lg, xl)),
+  (w,         width,                          $widths,                null,      (xs, sm, md, lg, xl))
+);

@@ -1,0 +1,23 @@
+.form-group + .form-group {
+  margin-top: $sp-md;
+}
+
+.label {
+  display: block;
+  padding-bottom: $sp-xxx-sm;
+  text-transform: uppercase;
+  font-weight: $fw-semibold;
+  font-size: $fs-xx-sm;
+  letter-spacing: 1px;
+}
+
+.form-control {
+  width: 100%;
+  border: 1px solid $color-border-input;
+  border-radius: 2px;
+  padding: $sp-x-sm;
+  transition: border-color .15s ease-in;
+  &:focus {
+  	border-color: $color-border-input-focus;
+  }
+}

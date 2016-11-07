@@ -1,0 +1,30 @@
+body {
+  line-height: $lh-base;
+  font-family: $ff-base;
+  font-weight: $fw-regular;
+  font-size: $fs-base;
+  color: $color-text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: $color-link;
+  transition: color .15s ease-in;
+  &:hover {
+    text-decoration: underline;
+    color: $color-link-hover;
+  }
+}
+
+.h1 {
+  line-height: $lh-sm;
+  font-size: $fs-xxxx-lg;
+}
+
+.h2 {
+  line-height: $lh-sm;
+  font-size: $fs-lg;
+  color: $color-text-muted;
+}

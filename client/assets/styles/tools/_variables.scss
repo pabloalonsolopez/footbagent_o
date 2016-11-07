@@ -1,0 +1,31 @@
+//Colors palette
+$radical-red:                        #FF3366;
+$white:                              #FFFFFF;
+$athens-gray-light:                  #F9F9FB;
+$athens-gray:                        #E4E7ED;
+$cadet-blue:                         #A2AABD;
+$bali-hay:                           #8799B6;
+$trout:                              #4B5362;
+
+//Semantic colors palette
+$color-brand:                        $radical-red;
+$color-brand-light:                  lighten($color-brand, 10%);
+
+$color-border:                       $athens-gray;
+
+$color-background:                   $athens-gray-light;
+$color-background-alt:               $white;
+
+$color-text:                         $trout;
+$color-text-muted:                   $bali-hay;
+$color-text-silenced:                $cadet-blue;
+
+$color-link:                         $cadet-blue;
+$color-link-hover:                   $bali-hay;
+
+//Media queries
+$breakpoints:                        (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+
+//Grid
+$container-max-widths:               (sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$grid-gutter:                        2rem;

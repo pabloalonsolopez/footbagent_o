@@ -1,0 +1,87 @@
+//Colors palette
+$white:                                     #FFFFFF;
+$river-bed:                                 #434C5F;
+$shuttle-gray:                              #596377;
+$regent-gray:                               #8C96A9;
+$mischka:                                   #D4D9E2;
+$radical-red:                               #FF4070;
+
+//Semantic colors
+$color-brand:                               $radical-red;
+
+$color-text:                                $river-bed;
+$color-text-muted:                          $shuttle-gray;
+
+$color-link:                                $color-brand;
+$color-link-hover:                          lighten($color-brand, 5%);
+
+//Line heights
+$lh-base:                                   1.5;
+$lh-sm:                                     1.25;
+$lh-reset:                                  1;
+
+//Font families
+$ff-base:                                   "Proxima Nova";
+$ff-icon:                                   "icomoon";
+
+//Font weights
+$fw-light:                                  300;
+$fw-regular:                                400;
+$fw-semibold:                               600;
+
+//Font sizes
+$fs-base:                                   14px;
+
+$fs-xxxx-lg:                                28px;
+$fs-xxx-lg:                                 24px;
+$fs-xx-lg:                                  20px;
+$fs-x-lg:                                   18px;
+$fs-lg:                                     16px;
+
+$fs-sm:                                     13px;
+$fs-x-sm:                                   12px;
+$fs-xx-sm:                                  11px;
+$fs-xxx-sm:                                 10px;
+
+//Spacings
+$sp-xxx-sm:                                  5px;
+$sp-xx-sm:                                  10px;
+$sp-x-sm:                                   15px;
+$sp-sm:                                     20px;
+$sp-md:                                     25px;
+$sp-lg:                                     30px;
+$sp-x-lg:                                   35px;
+$sp-xx-lg:                                  40px;
+$sp-xxx-lg:                                 45px;
+$sp-xxxx-lg:                                50px;
+$spacings: (
+  xxx-sm: $sp-xxx-sm,
+  xx-sm: $sp-xx-sm,
+  x-sm: $sp-x-sm,
+  sm: $sp-sm,
+  md: $sp-md,
+  lg: $sp-lg,
+  x-lg: $sp-x-lg,
+  xx-lg: $sp-xx-lg,
+  xxx-lg: $sp-xxx-lg,
+  xxxx-lg: $sp-xxxx-lg
+);
+
+//Input
+$color-border-input:                        $mischka;
+$color-border-input-focus:                  $regent-gray;
+
+//Button
+$color-border-button:                       $mischka;
+$color-border-button-hover:                 $color-brand;
+$color-background-button:                   transparent;
+$color-background-button-hover:             $color-brand;
+$color-button:                              $river-bed;
+$color-button-hover:                        $white;
+
+$color-border-button-primary:               $color-brand;
+$color-border-button-primary-hover:         $color-brand;
+$color-background-button-primary:           $color-brand;
+$color-background-button-primary-hover:     $color-brand;
+$color-button-primary:                      $white;
+$color-button-primary-hover:                $white;

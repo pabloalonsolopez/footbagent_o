@@ -4,18 +4,29 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
+  line-height: 1.5;
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: $gray2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   text-decoration: none;
-  color: $brand;
   transition: color .15s ease-in;
   &:hover {
     text-decoration: underline;
-    color: $brand5;
   }
 }
 
@@ -24,28 +35,12 @@ h1 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.5;
   font-weight: 400;
   font-size: 1.4rem;
 }
 
-img {
-  vertical-align: middle;
-}
-
-select {
-  appearance: none;
-  &:invalid {
-    color: $gray4;
-  }
-  option {
-    color: $black;
-  }
-}
-
-textarea {
-  resize: vertical;
-  min-height: 9rem;
-  height: 9rem;
-  max-height: 18rem;
+input {
+  -webkit-appearance: none;
+  font-family: inherit;
+  outline: 0;
 }

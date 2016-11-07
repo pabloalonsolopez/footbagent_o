@@ -1,0 +1,39 @@
+select {
+  appearance: none;
+  &:invalid {
+    color: $color-text-muted;
+  }
+  option {
+    color: $color-text-muted;
+  }
+}
+
+textarea {
+  resize: vertical;
+  min-height: 9rem;
+  height: 9rem;
+  max-height: 18rem;
+}
+
+.dropdown {
+  position: relative;
+  &.is-open {
+    .dropdown-menu {
+      pointer-events: auto;
+      transform: scale(1);
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  transform: scale(.1);
+  transform-origin: 25% top;
+  opacity: 0;
+  transition: all .3s cubic-bezier(.155,1.105,.295,1.12), opacity 200ms linear;
+  background: #FFFFFF;
+}

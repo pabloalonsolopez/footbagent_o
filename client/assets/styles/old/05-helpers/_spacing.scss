@@ -1,0 +1,11 @@
+@each $property, $abbrev in (margin: m, padding: p) {
+  @each $name, $value in $spacings {
+    .#{$abbrev}t-#{$name} { #{$property}-top: $value; }
+    .#{$abbrev}r-#{$name} { #{$property}-right: $value; }
+    .#{$abbrev}b-#{$name} { #{$property}-bottom: $value; }
+    .#{$abbrev}l-#{$name} { #{$property}-left: $value; }
+
+    .#{$abbrev}x-#{$name} { #{$property}-left: $value; #{$property}-right: $value; }
+    .#{$abbrev}y-#{$name} { #{$property}-top: $value; #{$property}-bottom: $value; }
+  }
+}
