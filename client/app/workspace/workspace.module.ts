@@ -13,6 +13,7 @@ import { AgendaComponent } from './agenda/agenda.component'
 import { ResourcesListComponent } from './resources/resources-list.component'
 import { ResourceNewComponent } from './resources/resource-new.component'
 import { ResourceDetailComponent } from './resources/resource-detail.component'
+import { ActivityListComponent } from './activities/activity-list.component'
 
 import { ResourceService } from './resources/resource.service'
 
@@ -30,7 +31,8 @@ import { ResourceService } from './resources/resource.service'
     AgendaComponent,
     ResourcesListComponent,
     ResourceNewComponent,
-    ResourceDetailComponent
+    ResourceDetailComponent,
+    ActivityListComponent
   ],
   providers: [
     ResourceService

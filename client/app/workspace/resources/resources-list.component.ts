@@ -17,6 +17,7 @@ export class ResourcesListComponent implements OnInit {
   constructor(private resourceService: ResourceService) { }
 
   ngOnInit(): void {
+    this.resources = new Array<Resource>()
     this.getTodos()
   }
 

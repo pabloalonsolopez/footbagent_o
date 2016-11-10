@@ -1,5 +1,6 @@
 export class Resource {
   _id: string
+  avatar: string
   name: string
   knownAs: string
   dateOfBirth: Date

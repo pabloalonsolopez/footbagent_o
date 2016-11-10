@@ -1,4 +1,18 @@
 <div *ngIf="resource">
+  <div class="bg(purple) pt(20px) pb(30px)">
+    <div class="d(flex) ai(center) w(100%) maxw(xl) m(0-auto) px(20px)">
+      <div class="d(inline-flex) ai(center) jc(center) w(56px) h(56px) mr(20px) br(100%) bg(purple1) lh(1) fw(600) f(1.4rem) c(purple4)" style="background-size: cover; background-position: center;" [ngStyle]="{'background-image': 'url(assets/images/' + resource.avatar + ')'}">{{resource.avatar ? "" : "PL"}}</div>
+      <h1 class="fw(300) lh(1.25) f(3.2rem) c(purple7)">{{resource.knownAs ? resource.knownAs : resource.name}}</h1>
+    </div>
+  </div>
+  <div class="bg(purple)">
+    <div class="d(flex) w(100%) maxw(xl) m(0-auto) px(10px)">
+      <nav class="d(flex)">
+        <a class="bb(2) bc(transparent) bc-active(red) px(10px) py(15px) td-hover(none) tt(uppercase) f(1.2rem) c(purple4) c-hover(purple7) c-active(purple7) ls(0.1rem) t(all)" routerLink="detail" routerLinkActive="is-active">Profile</a>
+        <a class="ml(30px) bb(2) bc(transparent) bc-active(red) px(10px) py(15px) td-hover(none) tt(uppercase) f(1.2rem) c(purple4) c-hover(purple7) c-active(purple7) ls(0.1rem) t(all)" routerLink="activity" routerLinkActive="is-active">Activity</a>
+      </nav>
+    </div>
+  </div>
   <div class="bb(1) bg(gray1)">
     <div class="d(flex) fwrap(wrap) ai(center) maxw(120rem) m(center) p(1rem)">
       <div class="flex(12) flex(expand)@md p(1rem)">

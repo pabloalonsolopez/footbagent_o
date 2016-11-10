@@ -10,6 +10,7 @@ import { AgendaComponent } from './agenda/agenda.component'
 import { ResourcesListComponent } from './resources/resources-list.component'
 import { ResourceNewComponent } from './resources/resource-new.component'
 import { ResourceDetailComponent } from './resources/resource-detail.component'
+import { ActivityListComponent } from './activities/activity-list.component'
 
 const routes: Routes = [
   {
@@ -54,7 +55,26 @@ const routes: Routes = [
       },
       {
         path: 'resources/:id',
-        component: ResourceDetailComponent
+        redirectTo: 'resources/:id/details',
+        pathMatch: 'full',
+      },
+      {
+        path: 'resources/:id',
+        component: ResourceDetailComponent,
+        children: [
+          {
+            path: 'details',
+            component:ResourceDetailComponent
+          },
+          {
+            path: 'activity',
+            component: ResourceActivityComponent
+          }
+        ]
+      },
+      {
+        path: 'activity',
+        component: ActivityListComponent
       }
     ]
   }

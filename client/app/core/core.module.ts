@@ -22,7 +22,7 @@ import { CookiesComponent } from './cookies/cookies.component'
     RoutingModule
   ],
   declarations: [
-  	HeaderComponent,
+    HeaderComponent,
     MainContentComponent,
     FooterComponent,
     HomeComponent,

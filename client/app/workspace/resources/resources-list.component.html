@@ -1,57 +1,30 @@
-<div class="bg(blue) pt(20px) pb(40px)">
+<div class="bg(purple) pt(20px) pb(40px)">
   <div class="d(flex) w(100%) maxw(xl) m(0-auto) px(20px)">
-    <h1 class="fw(300) lh(1.25) f(3.2rem) c(white)">Resources</h1>
+    <h1 class="fw(300) lh(1.25) f(3.2rem) c(purple7)">Resources</h1>
   </div>
 </div>
-<div class="w(100%) maxw(120rem) m(center) px(2rem) py(5rem)">
-  <div class="ta(right)">
-    <a class="{{'button' | f}}" routerLink="new">New</a>
-    <a class="{{'button' | f}} ml(1rem)">Delete</a>
+<div class="w(100%) maxw(xl) m(0-auto) py(50px)">
+  <div *ngIf="resources.length">
+    <div class="d(flex) px(20px)">
+      <div class="ml(auto)">
+        <a class="{{'button--primary' | f}}" routerLink="new">New Resource</a>
+      </div>
+    </div>
+    <div class="w(100%) maxw(xl) m(0-auto)">
+      <div class="d(flex) fwrap(wrap) p(10px)">
+        <div class="d(flex) w(25%) p(10px)" *ngFor="let resource of resources">
+          <a class="d(flex) w(100%) h(400px) fd(column) ai(center) bs(1) bs-hover(2) br(2px) p(30px) bg(black7) td-hover(none) t(all)" routerLink="{{resource._id}}">
+            <div class="d(flex) ai(center) jc(center) w(130px) h(130px) bg(black5) br(100%) fw(600) f(4rem) c(black3)" style="background-size: cover; background-position: center;" [ngStyle]="{'background-image': 'url(assets/images/' + resource.avatar + ')'}">{{resource.avatar ? "" : "PL"}}</div>
+            <p class="mt(20px) f(1.6rem) c(black)">{{resource.knownAs ? resource.knownAs : resource.name}}</p>
+            <p class="f(1.3rem) c(black2)">{{resource.email}}</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="px(20px) ta(center)" *ngIf="!resources.length">
+    <p class="f(2rem) c(black)">No resources found.</p>
+    <p class="mt(10px)">Start creating resources to manage them.</p>
+    <a class="{{ 'button--primary' | f }} mt(40px)" routerLink="new">New Resource</a>
   </div>
 </div>
-<table class="table">
-  <thead>
-    <tr>
-      <th>Known as</th>
-      <th>Name</th>
-      <th>Date of birth</th>
-      <th>City of birth</th>
-      <th>State of birth</th>
-      <th>Country of birth</th>
-      <th>Marital status</th>
-      <th>Children</th>
-      <th>Height</th>
-      <th>Weight</th>
-      <th>Preferred foot</th>
-      <th>Main position</th>
-      <th>Phone</th>
-      <th>Email</th>
-      <th>Website</th>
-      <th>Twitter</th>
-      <th>Facebook</th>
-      <th>Instagram</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let resource of resources">
-      <td><a routerLink="{{resource._id}}">{{resource.knownAs}}</a></td>
-      <td>{{resource.name}}</td>
-      <td>{{resource.dateOfBirth}}</td>
-      <td>{{resource.cityOfBirth}}</td>
-      <td>{{resource.stateOfBirth}}</td>
-      <td>{{resource.countryOfBirth}}</td>
-      <td>{{resource.maritalStatus}}</td>
-      <td>{{resource.children}}</td>
-      <td>{{resource.height}}</td>
-      <td>{{resource.weight}}</td>
-      <td>{{resource.preferredFoot}}</td>
-      <td>{{resource.mainPosition}}</td>
-      <td>{{resource.phone}}</td>
-      <td>{{resource.email}}</td>
-      <td>{{resource.website}}</td>
-      <td>{{resource.twitter}}</td>
-      <td>{{resource.facebook}}</td>
-      <td>{{resource.instagram}}</td>
-    </tr>
-  </tbody>
-</table>

@@ -13,6 +13,10 @@
       <div class="flex(12) flex(9)@md px(1rem)">
         <div class="flex(expand) d(flex) fwrap(wrap) mx(-1rem)">
           <div class="flex(12) flex(8)@md p(1rem)">
+            <label class="{{ 'label' | f }}" for="avatar">Avatar</label>
+            <input class="{{ 'form-control' | f }}" type="text" id="avatar" placeholder="Avatar" formControlName="avatar">
+          </div>
+          <div class="flex(12) flex(8)@md p(1rem)">
             <label class="{{ 'label' | f }}" for="name">Name</label>
             <input class="{{ 'form-control' | f }}" type="text" id="name" placeholder="Name" formControlName="name">
           </div>
