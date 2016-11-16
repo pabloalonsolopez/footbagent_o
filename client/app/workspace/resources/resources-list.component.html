@@ -1,4 +1,37 @@
+<<<<<<< HEAD
 <h4>Resources List</h4>
 <ul>
   <li *ngFor="let resource of resources">{{resource.name}}</li>
 </ul>
+=======
+<div class="bg(purple) pt(20px) pb(40px)">
+  <div class="d(flex) w(100%) maxw(xl) m(0-auto) px(20px)">
+    <h1 class="fw(300) lh(1.25) f(3.2rem) c(purple7)">Resources</h1>
+  </div>
+</div>
+<div class="w(100%) maxw(xl) m(0-auto) py(50px)">
+  <div *ngIf="resources.length">
+    <div class="d(flex) px(20px)">
+      <div class="ml(auto)">
+        <a class="{{'button--primary' | f}}" routerLink="new">New Resource</a>
+      </div>
+    </div>
+    <div class="w(100%) maxw(xl) m(0-auto)">
+      <div class="d(flex) fwrap(wrap) p(10px)">
+        <div class="d(flex) w(25%) p(10px)" *ngFor="let resource of resources">
+          <a class="d(flex) w(100%) h(400px) fd(column) ai(center) bs(1) bs-hover(2) br(2px) p(30px) bg(black7) td-hover(none) t(all)" routerLink="{{resource._id}}">
+            <div class="d(flex) ai(center) jc(center) w(130px) h(130px) bg(black5) br(100%) fw(600) f(4rem) c(black3)" style="background-size: cover; background-position: center;" [ngStyle]="{'background-image': 'url(assets/images/' + resource.avatar + ')'}">{{resource.avatar ? "" : "PL"}}</div>
+            <p class="mt(20px) f(1.6rem) c(black)">{{resource.knownAs ? resource.knownAs : resource.name}}</p>
+            <p class="f(1.3rem) c(black2)">{{resource.email}}</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="px(20px) ta(center)" *ngIf="!resources.length">
+    <p class="f(2rem) c(black)">No resources found.</p>
+    <p class="mt(10px)">Start creating resources to manage them.</p>
+    <a class="{{ 'button--primary' | f }} mt(40px)" routerLink="new">New Resource</a>
+  </div>
+</div>
+>>>>>>> e4cefb876dc6aa156677e7a1a8d9ffbc0d1c3dc7

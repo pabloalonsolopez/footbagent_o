@@ -17,7 +17,16 @@ export class ResourcesListComponent implements OnInit {
   constructor(private resourcesService: ResourcesService) {}
 
   ngOnInit(): void {
+<<<<<<< HEAD
     this.resourcesService.getResources()
+=======
+    this.resources = new Array<Resource>()
+    this.getTodos()
+  }
+
+  getTodos(): void {
+    this.resourceService.getResources()
+>>>>>>> e4cefb876dc6aa156677e7a1a8d9ffbc0d1c3dc7
       .subscribe(
         resources => this.resources = resources,
         error => this.error = error

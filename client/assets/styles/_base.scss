@@ -26,6 +26,7 @@ body {
 a {
   text-decoration: none;
   transition: color .15s ease-in;
+  outline: 0;
   &:hover {
     text-decoration: underline;
   }
@@ -44,4 +45,33 @@ input {
   -webkit-appearance: none;
   font-family: inherit;
   outline: 0;
+}
+
+.dropdown {
+  position: relative;
+  &.is-open {
+    .dropdown-menu {
+      pointer-events: auto;
+      opacity: 1;
+      .dropdown-menu-content {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  pointer-events: none;
+  transform-origin: center top;
+  opacity: 0;
+  transition: all .4s cubic-bezier(.7, 0, .3, 1);
+  .dropdown-menu-content {
+    transform: translate3d(0, -20px, 0);
+    opacity: 0;
+    transition: opacity .4s ease, transform .4s cubic-bezier(.7, 0, .3, 1);
+  }
 }

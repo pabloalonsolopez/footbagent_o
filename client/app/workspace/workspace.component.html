@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="bg(purple)">
   <div class="d(flex) ai(center) w(100%) maxw(xl) m(0-auto) p(20px)">
     <div class="d(flex) ai(center)">
@@ -8,6 +9,34 @@
     <div class="d(flex) ml(auto)">
       <a class="td-hover(none) lh(1.25) f(1.3rem) c(purple3) c-hover(purple6)">Pablo Alonso López</a>
     </div>
+=======
+<div class="bg(purple) py(20px)">
+  <div class="d(flex) w(100%) maxw(xl) m(0-auto) px(20px)">
+    <nav class="d(flex) ai(center)">
+      <a class="icon-logo td-hover(none) mr(20px) bri(1) bc(purple1) pr(20px) f(2rem) c(purple4) c-hover(purple6)" routerLink="/workspace"></a>
+      <a class="td-hover(none) lh(1.25) f(1.3rem) c(purple4) c-hover(purple6) c-active(purple6)" routerLink="resources" routerLinkActive="is-active">Resources</a>
+      <a class="ml(40px) td-hover(none) lh(1.25) f(1.3rem) c(purple4) c-hover(purple6) c-active(purple6)" routerLink="activity" routerLinkActive="is-active">Activity</a>
+    </nav>
+    <nav class="d(flex) ai(center) ml(auto)">
+      <a class="icon-logo td-hover(none) f(1.6rem) c(purple4) c-hover(purple6)"></a>
+      <div class="dropdown" dropdown>
+        <a class="ml(20px) td-hover(none) f(1.3rem) c(purple4) c-hover(purple6)" dropdown-open>Pablo Alonso López</a>
+        <div class="dropdown-menu p(30px) bs(3) bg(black7)">
+          <div class="dropdown-menu-content">
+            <div class="d(flex) pb(30px) bb(1) bc(black5)">
+              <div class="d(flex) ai(center) jc(center) w(80px) h(80px) mr(20px) bg(black5) br(3px) fw(600) f(2.3rem) c(black3)">PL</div>
+              <div class="d(flex) fd(column) ai(flex-start)">
+                <p class="lh(1.25) f(1.6rem) c(black)">Pablo Alonso López</p>
+                <p class="f(1.2rem) c(black3)">pabloalonsolopez@gmail.com</p>
+                <a class="{{'button--primary--sm' | f}} mt(auto)" routerLink="profile">View profile</a>
+              </div>
+            </div>
+            <a class="d(block) mt(20px) tt(uppercase) td-hover(none) f(1.3rem) c(black3) c-hover(black2)">Sign out</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+>>>>>>> e4cefb876dc6aa156677e7a1a8d9ffbc0d1c3dc7
   </div>
 </div>
 <router-outlet></router-outlet>

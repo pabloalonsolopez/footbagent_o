@@ -4,6 +4,7 @@ import { PositionSchema } from "../schemas/position"
 import { LanguageSchema } from "../schemas/language"
 
 const ResourceSchema = new Schema({
+  avatar: String,
   name: String,
   knownAs: String,
   dateOfBirth: Date,

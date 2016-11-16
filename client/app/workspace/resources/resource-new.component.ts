@@ -33,6 +33,7 @@ export class ResourceNewComponent implements OnInit {
 
   buildForm(): void {
     this.resourceForm = this.fb.group({
+      'avatar': [''],
       'name': [''],
       'knownAs': [''],
       'dateOfBirth': [''],
