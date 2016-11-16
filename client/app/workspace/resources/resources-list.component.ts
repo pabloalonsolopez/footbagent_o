@@ -1,30 +1,26 @@
 import { Component, OnInit } from '@angular/core'
 
-import { Resource } from './resource'
-import { ResourceService } from './resource.service'
+import { Resource } from './resource.model'
+import { ResourcesService } from './resources.service'
 
 @Component({
   moduleId: module.id,
-  selector: 'fb-resources-list',
+  selector: 'st-resources-list',
   templateUrl: 'resources-list.component.html'
 })
 
 export class ResourcesListComponent implements OnInit {
   
   resources: Resource[]
-  errorMessage: any
-
-  constructor(private resourceService: ResourceService) { }
+  error: any
+  
+  constructor(private resourcesService: ResourcesService) {}
 
   ngOnInit(): void {
-    this.getTodos()
-  }
-
-  getTodos(): void {
-    this.resourceService.getResources()
+    this.resourcesService.getResources()
       .subscribe(
         resources => this.resources = resources,
-        error => this.errorMessage = <any>error
+        error => this.error = error
       )
   }
 

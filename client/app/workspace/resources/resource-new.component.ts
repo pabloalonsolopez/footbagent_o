@@ -2,21 +2,20 @@ import { Component, OnInit } from '@angular/core'
 import { FormGroup, FormBuilder, FormArray, Validators } from '@angular/forms'
 import { Router } from '@angular/router'
 
-import { Resource } from './resource'
-import { ResourceService } from './resource.service'
+import { Resource } from './resource.model'
+import { ResourcesService } from './resources.service'
 
 @Component({
   moduleId: module.id,
-  selector: 'fb-resource-new',
+  selector: 'st-resource-new',
   templateUrl: 'resource-new.component.html'
 })
 
 export class ResourceNewComponent implements OnInit {
-  
+
   resourceForm: FormGroup
   resource: Resource
-  errorMessage: any
-
+  error: any
   formErrors: any = {
     'name': ''
   }
@@ -25,9 +24,8 @@ export class ResourceNewComponent implements OnInit {
       'required': 'Name is required.'
     }
   }
-  
 
-  constructor(private fb: FormBuilder, private router: Router, private resourceService: ResourceService) { }
+  constructor(private fb: FormBuilder, private router: Router, private resourcesService: ResourcesService) { }
 
   ngOnInit(): void {
     this.buildForm()
@@ -67,11 +65,11 @@ export class ResourceNewComponent implements OnInit {
   }
 
   submit(): void {
-    this.resourceService.create(this.resourceForm.value)
-  	  .subscribe(
-        resource => this.router.navigate(['/workspace/resources', resource._id]),
-        error => this.errorMessage = <any>error
-  	  )
+    this.resourcesService.createResource(this.resourceForm.value)
+      .subscribe(
+        resource => this.router.navigate(['/resources', resource._id]),
+        error => this.error = error
+      )
   }
 
   onValueChanged(data?: any): void {
@@ -87,7 +85,7 @@ export class ResourceNewComponent implements OnInit {
       }
     }
   }
-  
+
   initPosition(): FormGroup {
     return this.fb.group({
       'name': ['']

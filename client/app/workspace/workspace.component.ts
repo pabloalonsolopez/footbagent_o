@@ -2,7 +2,7 @@ import { Component } from '@angular/core'
 
 @Component({
   moduleId: module.id,
-  selector: 'fb-workspace',
+  selector: 'st-workspace',
   templateUrl: 'workspace.component.html'
 })
 
